@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img,
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #f5f4ef;
+}
+
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+header {
+  background-image: url(img/gradient.webp);
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  padding: 30px;
+}
+.LOGO {
+  width: 10%;
+  align-items: center;
+}
+.navbar {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  font-family: GmarketSansMedium;
+}
+.navbar a {
+  color: aliceblue;
+  font-size: 15px;
+  justify-content: space-between;
+  padding: 20px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  padding-top: 20px;
+}
+.navbar a:hover {
+  color: rgb(243, 247, 6);
+}
+
+.burger {
+  display: block;
+  color: rgb(236, 237, 181);
+  font-size: 20px;
+}
+
+.navbar.show {
+  display: flex;
+  flex-direction: column;
+}
+.navbar {
+  display: none;
+}
+
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+.container {
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.guide,
+.proces {
+  position: absolute;
+  font-size: 2vw;
+  text-align: left;
+  font-family: "Noto Sans JP", sans-serif;
+}
+.guide {
+  transform: translate(94%, -1259%);
+}
+.proces {
+  transform: translate(687%, -206%);
+}
+
+.semester {
+  position: absolute;
+  transform: translate(199%, -2434%);
+  font-size: 3vw;
+  text-align: left;
+  font-family: "Anonymous Pro", monospace;
+}
+
+.explore {
+  position: absolute;
+  transform: translate(430%, -1496%);
+  font-size: 3vw;
+  text-align: left;
+  font-weight: bold;
+  font-family: "Anonymous Pro", monospace;
+}
+.explore a {
+  color: rgb(175, 20, 20);
+}
+.explore a:hover {
+  color: rgb(13, 37, 142);
+}
+
+footer {
+  background-image: url(img/gradient.webp);
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  padding: 30px;
+}
+.col_2 {
+  display: flex;
+  justify-content: space-between;
+}
+.mail,
+.social_media,
+.info {
+  color: white;
+  font-size: 1.5vw;
+  font-weight: bold;
+  font-family: "Pretendard-Regular";
+}
+
+@media screen and (min-width: 700px) {
+  .navbar {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .burger {
+    display: none;
+  }
+  .container {
+    margin: 5% auto;
+    width: 50%;
+    height: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+  }
+  .guide,
+  .proces {
+    position: absolute;
+    font-size: 1.5vw;
+    text-align: left;
+    font-family: "Noto Sans JP", sans-serif;
+  }
+  .guide {
+    transform: translate(81%, -835%);
+  }
+  .proces {
+    transform: translate(428%, -142%);
+  }
+  .semester {
+    position: absolute;
+    transform: translate(153%, -1828%);
+    font-size: 2vw;
+    text-align: left;
+    font-family: "Anonymous Pro", monospace;
+  }
+  .explore {
+    position: absolute;
+    transform: translate(173%, -798%);
+    font-size: 3vw;
+  }
+}
