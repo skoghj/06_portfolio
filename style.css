@@ -24,14 +24,13 @@ body {
   font-style: normal;
 }
 header {
-  background-image: url(img/gradient.webp);
   width: 100%;
   height: auto;
   background-size: cover;
-  padding: 30px;
+  border-bottom: 2px solid rgb(10, 100, 247);
 }
 .LOGO {
-  width: 10%;
+  width: 12vw;
   align-items: center;
 }
 .navbar {
@@ -44,10 +43,9 @@ header {
   font-family: GmarketSansMedium;
 }
 .navbar a {
-  color: aliceblue;
-  font-size: 15px;
+  color: rgb(10, 100, 247);
+  font-size: 3.5vw;
   justify-content: space-between;
-  padding: 20px;
   text-decoration: none;
   display: flex;
   flex-direction: column;
@@ -55,7 +53,7 @@ header {
 
 a {
   text-decoration: none;
-  padding-top: 20px;
+  padding: 20px 0 20px 0;
 }
 .navbar a:hover {
   color: rgb(243, 247, 6);
@@ -63,8 +61,9 @@ a {
 
 .burger {
   display: block;
-  color: rgb(236, 237, 181);
+  color: rgb(10, 100, 247);
   font-size: 20px;
+  padding-left: 20px;
 }
 
 .navbar.show {
@@ -76,11 +75,12 @@ a {
 }
 
 @font-face {
-  font-family: "Pretendard-Regular";
-  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+  font-family: "Jeongnimsaji-R";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/Jeongnimsaji-R.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
+
 .container {
   margin: 0 auto;
   width: 100%;
@@ -90,32 +90,35 @@ a {
 .guide,
 .proces {
   position: absolute;
-  font-size: 2vw;
+  font-size: 3vw;
   text-align: left;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Jeongnimsaji-R";
+  color: rgb(83, 72, 72);
+  line-height: 4vw;
 }
 .guide {
-  transform: translate(94%, -1259%);
+  transform: translate(19vw, -145vw);
 }
 .proces {
-  transform: translate(687%, -206%);
+  transform: translate(71vw, -32vw);
 }
 
 .semester {
   position: absolute;
-  transform: translate(199%, -2434%);
-  font-size: 3vw;
+  transform: translate(49vw, -72vw);
+  font-size: 4vw;
   text-align: left;
-  font-family: "Anonymous Pro", monospace;
+  font-family: "Jeongnimsaji-R";
+  color: rgb(83, 72, 72);
 }
 
 .explore {
   position: absolute;
-  transform: translate(430%, -1496%);
-  font-size: 3vw;
+  transform: translate(49vw, -61vw);
+  font-size: 6vw;
   text-align: left;
   font-weight: bold;
-  font-family: "Anonymous Pro", monospace;
+  font-family: "Anton", sans-serif;
 }
 .explore a {
   color: rgb(175, 20, 20);
@@ -125,65 +128,132 @@ a {
 }
 
 footer {
-  background-image: url(img/gradient.webp);
   width: 100%;
   height: auto;
-  background-size: cover;
-  padding: 30px;
+  border-top: 2px solid rgb(10, 100, 247);
 }
 .col_2 {
   display: flex;
   justify-content: space-between;
+  padding: 0 30px 0 30px;
+}
+.logo_2 {
+  width: 12vw;
+  padding-top: 20px;
 }
 .mail,
 .social_media,
 .info {
-  color: white;
-  font-size: 1.5vw;
+  color: rgb(10, 100, 247);
+  font-size: 2vw;
   font-weight: bold;
-  font-family: "Pretendard-Regular";
+  font-family: "GmarketSansMedium";
+  padding: 20px 0 20px 0;
 }
 
+/********************************************forside*/
+.col_3 {
+  font-family: "Arapey", serif;
+  text-align: center;
+}
+.overskrift,
+.underskrift_1 {
+  font-size: 1em;
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  color: blue;
+}
+.overskrift::before {
+  content: "";
+  flex-grow: 1;
+  background: blue;
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+}
+.underskrift_1::after {
+  content: "";
+  flex-grow: 1;
+  background: blue;
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+}
+.underskrift {
+  font-size: 4em;
+}
 @media screen and (min-width: 700px) {
   .navbar {
     display: flex;
-    padding: 20px;
     align-items: center;
     justify-content: space-between;
+    padding: 0 40px 0 40px;
+  }
+  .navbar a {
+    font-size: 1vw;
   }
   .burger {
     display: none;
   }
   .container {
-    margin: 5% auto;
+    margin: 10% auto;
     width: 50%;
     height: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
     position: relative;
   }
+  .LOGO {
+    width: 7vw;
+    align-items: center;
+  }
   .guide,
   .proces {
     position: absolute;
-    font-size: 1.5vw;
+    font-size: 1vw;
     text-align: left;
-    font-family: "Noto Sans JP", sans-serif;
+    font-family: "Jeongnimsaji-R";
+    color: rgb(83, 72, 72);
+    line-height: 2vw;
   }
   .guide {
-    transform: translate(81%, -835%);
+    transform: translate(10vw, -71vw);
   }
   .proces {
-    transform: translate(428%, -142%);
+    transform: translate(39vw, -15vw);
   }
   .semester {
     position: absolute;
-    transform: translate(153%, -1828%);
+    transform: translate(24vw, -36vw);
     font-size: 2vw;
     text-align: left;
-    font-family: "Anonymous Pro", monospace;
+    font-family: "Jeongnimsaji-R";
+    color: rgb(83, 72, 72);
   }
   .explore {
     position: absolute;
-    transform: translate(173%, -798%);
+    transform: translate(24vw, -31vw);
     font-size: 3vw;
   }
+  .col_2 {
+    border-top: 2px solid rgb(10, 100, 247);
+    width: 100%;
+  }
+  .logo_2 {
+    width: 7vw;
+    padding-top: 20px;
+  }
+  .mail,
+  .social_media,
+  .info {
+    color: rgb(10, 100, 247);
+    font-size: 1vw;
+    font-weight: bold;
+    font-family: "GmarketSansMedium";
+    padding: 20px 0 20px 0;
+  }
+  footer {
+    border-top: 2px;
+  }
+  /*forside//////////////////////////////////*/
 }
