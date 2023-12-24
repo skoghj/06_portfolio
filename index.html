@@ -7,37 +7,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/c5d83fc88a.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Arapey&display=swap" rel="stylesheet">
-    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <title>Forside</title>
 </head>
 
 <body>
     <header>
         <a href="#" class="burger" id="burgerIcon"><i class="fa-solid fa-bars"></i></a>
         <div class="navbar" id="myNavbar">
-            <a href="forside.html" CLASS="LOGO"><img src="img/logo.webp" alt="logo"></a>
-            <a href="index.html">Home</a>
+            <a href="index.html" CLASS="LOGO"><img src="img/logo_blue.webp" alt="logo"></a>
+            <a href="forside.html">Home</a>
             <a href="portfolio.html">Portfolio</a>
             <a href="about.html">Om mig</a>
             <a href="kontakt.html">Kontakt</a>
         </div>
     </header>
     <main>
-        <section class="col_3">
-            <div class="overskrift">WELCOME TO MY</div>
-            <div class="underskrift">PORTFOLIO</div>
-            <div CLASS="underskrift_1">MMD.2023</div>
-        </section>
+        <div class="container"><img class=forside src="img/forside.webp" alt="forside">
+            <div class="guide">
+                02 tema: Web <br>
+                03 tema: UX <br>
+                04 tema: Animation <br>
+                05 tema: Indhold <br>
+            </div>
+            <ol class="proces">
+                <li>Research</li>
+                <li>Ideudvikling</li>
+                <li>Test</li>
+                <li>Design</li>
+                <li>Reflektioner</li>
+            </ol>
+            <div class="semester">1.semester.2023</div>
+            <div class="explore"> <a href="forside.html">Explore➔ </a></div>
 
+        </div>
     </main>
     <footer>
-        <div class="col_2"> <img src="img/logo.webp" style="width: 10%;" alt="logo">
+        <div class="col_2">
+            <div class="logo_2"><img src="img/logo_blue.webp" alt="logo"></div>
             <div class="info">Lavet af Hui-jin</div>
-            <div class="mail">e-mail:huba0001@stud.kea.dk</div>
+            <div class="mail">E-mail:huba0001@stud.kea.dk</div>
         </div>
     </footer>
+    <script src="portfolio.js" defer></script>
 </body>
 
 </html>

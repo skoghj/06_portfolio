@@ -56,7 +56,7 @@ a {
   padding: 20px 0 20px 0;
 }
 .navbar a:hover {
-  color: rgb(243, 247, 6);
+  color: rgb(209, 77, 33);
 }
 
 .burger {
@@ -151,10 +151,10 @@ footer {
   padding: 20px 0 20px 0;
 }
 
-/********************************************forside*/
+/********************************************index*/
 .col_3 {
-  font-family: "Arapey", serif;
   text-align: center;
+  padding-top: 7vw;
 }
 .overskrift,
 .underskrift_1 {
@@ -162,26 +162,174 @@ footer {
   display: flex;
   flex-basis: 100%;
   align-items: center;
-  color: blue;
+  color: #1562e7;
+  font-family: "Roboto", sans-serif;
 }
 .overskrift::before {
-  content: "";
-  flex-grow: 1;
-  background: blue;
-  height: 1px;
-  font-size: 0px;
-  line-height: 0px;
+  content: ""; /* Indholdet for det pseudo-element (ingen indhold i dette tilfælde) */
+  display: inline-block; /* Gør pseudo-elementet til et inline-block element, så du kan justere bredden */
+  width: 23vw; /* Juster bredden af linjen efter behov */
+  border-bottom: 2px solid #1562e7; /* Stil og farve af linjen */
+  margin-right: 10px; /* Juster afstanden mellem linjen og teksten efter behov */
+}
+.underskrift_1 {
+  justify-content: right;
 }
 .underskrift_1::after {
   content: "";
-  flex-grow: 1;
-  background: blue;
+  display: inline-block;
+  width: 23vw;
   height: 1px;
-  font-size: 0px;
-  line-height: 0px;
+  border-bottom: 2px solid #1562e7;
+  margin-left: 10px;
 }
 .underskrift {
+  font-family: "Anton", sans-serif;
+  font-weight: bold;
   font-size: 4em;
+  color: #1562e7;
+  letter-spacing: 1vw;
+}
+.underskrift::after {
+  content: "FOLIO";
+  left: 0;
+  white-space: nowrap; /* 줄 바꿈 방지 */
+  color: transparent;
+  -webkit-text-stroke: 0.2vw #1562e7;
+}
+.timeline ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+.timeline {
+  margin: 29vw 7vw;
+  border-top: 2px solid #1562e7;
+}
+.active {
+  padding: 0vw 6.4vw;
+  font-size: 4vw;
+  line-height: 2;
+}
+.active::before {
+  content: "";
+  display: block;
+  width: 1.5vw;
+  height: 1.5vw;
+  border-radius: 50%;
+  background-color: #be1f1f;
+  transform: translate(132%, -64%);
+}
+.active::after {
+  content: "";
+  width: 0;
+}
+
+.active:hover {
+  color: #be1f1f;
+  transform: scale(2);
+}
+
+.projekt {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  object-fit: contain;
+  width: 100%;
+}
+
+.nummer {
+  font-size: 14vw;
+  color: #be1f1f;
+  font-family: "Jeongnimsaji-R";
+  padding: 0 0 0 2vw;
+}
+
+.tema {
+  font-size: 5vw;
+  color: rgb(83, 72, 72);
+  font-family: "anton";
+  letter-spacing: 0.1vw;
+  padding: 0 0 1vw 2vw;
+  font-weight: bold;
+}
+.beskrivelse {
+  font-size: 4vw;
+  font-family: "Arapey", serif;
+  padding: 0 0 2vw 2vw;
+}
+.tema_pic_4 {
+  transform: translateY(4.4vw);
+}
+.tema_pic_2,
+.tema_pic_3,
+.tema_pic_4,
+.tema_pic_5,
+.tema_pic_6 {
+  padding-bottom: 4vw;
+}
+
+.om_mig,
+.kontakt_overskrift {
+  font-family: "Anton", sans-serif;
+  font-size: 14vw;
+  color: #1562e7;
+  letter-spacing: 1vw;
+  padding-left: 2vw;
+}
+.whoami {
+  font-size: 1em;
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  color: #1562e7;
+  font-family: "Roboto", sans-serif;
+  justify-content: right;
+}
+.whoami::after {
+  content: "";
+  display: inline-block;
+  width: 36vw;
+  height: 1px;
+  border-bottom: 2px solid #1562e7;
+  margin-left: 10px;
+}
+.about_pic {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.profil_pic1 {
+  grid-column: 3/4;
+  grid-row: 1/3;
+}
+.profil_pic1 img {
+  border-radius: 43% 0%;
+}
+.profil_pic2 img {
+  border-radius: 409% 335% 23% 360%;
+  padding: 19vw 4vw;
+}
+.profil_pic2 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.underskrift_kontakt {
+  font-size: 1em;
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  color: #1562e7;
+  font-family: "Roboto", sans-serif;
+  justify-content: right;
+  padding-bottom: 5vw;
+}
+.underskrift_kontakt::after {
+  content: "";
+  display: inline-block;
+  width: 36vw;
+  height: 1px;
+  border-bottom: 2px solid #1562e7;
+  margin-left: 10px;
 }
 @media screen and (min-width: 700px) {
   .navbar {
@@ -255,5 +403,5 @@ footer {
   footer {
     border-top: 2px;
   }
-  /*forside//////////////////////////////////*/
+  /*index//////////////////////////////////*/
 }
