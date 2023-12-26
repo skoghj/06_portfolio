@@ -44,37 +44,40 @@
             <div class="nr2">
                 <div class="nummer">02</div>
                 <div class="tema">Tema: Web </div>
-                <div class="beskrivelse">Fokus på HTML,CSS og responsivt webdesign <br> Fuldførelse af studieprøven
+                <div class="beskrivelse2">Fokus på HTML og CSS <br> Fuldførelse af studieprøven.
                 </div>
                 <div class="tema_pic_2"><img src="img/device_mockup.webp" alt="tema2"></div>
             </div>
             <div class="nr3">
                 <div class="nummer">03</div>
                 <div class="tema">Tema: UX/UI</div>
-                <div class="beskrivelse">Fokus på digital produktudvikling. <br> Fuldførelse af kodet site
+                <div class="beskrivelse3">Fokus på digital produktudvikling. <br>
+                    Fuldførelse af kodet site.
                 </div>
                 <div class="tema_pic_3"><img src="img/website_mockup.webp" alt="tema3"></div>
             </div>
             <div class="nr4">
                 <div class="nummer">04</div>
                 <div class="tema">Tema: Animation</div>
-                <div class="beskrivelse">Fokus på JavaScript og grafiske elementer <br>Fuldførelse af
-                    et spil</div>
+                <div class="beskrivelse4">Fokus på JavaScript og grafiske elementer. <br>Fuldførelse af
+                    spil.</div>
                 <div class="tema_pic_4"><img src="img/spilmockup.webp" alt="tema4"></div>
             </div>
             <div class="nr5">
                 <div class="nummer">05</div>
                 <div class="tema">Tema: Indhold</div>
-                <div class="beskrivelse">Fokus på videoproduktion og sammearbejde <br>Fuldførelse af
-                    redesigne en virksomheds hjemmeside.</div>
+                <div class="beskrivelse5">Fokus på videoproduktion og samarbejde. <br>Fuldførelse af
+                    redesign af en virksomheds hjemmeside.</div>
                 <div class="tema_pic_5"><img src="img/youtube.webp" alt="tema5"></div>
             </div>
             <div class="nr6">
                 <div class="nummer">06</div>
                 <div class="tema">Tema: Portfolio</div>
-                <div class="beskrivelse">Fokus på hver temaers viden, færdigheder og kompetencer<br>Fuldførelse af
+                <div class="beskrivelse6">Fokus på viden, færdigheder og kompetencer inden for hvert
+                    tema.<br>Fuldførelse af
                     portfolio website.</div>
-                <div class="tema_pic_6"><img src="img/portfoliomockup.webp" alt=""></div>
+                <div class="tema_pic_6"><img src="img/portfolio.webp
+                    " alt=""></div>
             </div>
         </section>
         <div class="about_overskrift">
@@ -83,12 +86,27 @@
         </div>
         <section class="about">
             <div class="profil">
-                <div class="cv">cv</div>
-                <div class="om_mig1">om mig</div>
+                <div class="om_mig1"><img src="img/profil.webp" alt="Profile"></div>
+                <div class="om_tekst">Hej! jeg hedder Hui-jin (Heejin) og kommer fra
+                    Sydorea.
+                    Jeg er bosat i Danmark og studerer Multimediedesign. <br>
+                    Hvis du ønsker at vide mere om mig, er du velkommen til at <span class="klik">klikke
+                        her.</span></div>
             </div>
-            <div class="about_pic">
-                <div class="profil_pic2"><img src="img/bookstore2.webp" alt="profil_pic"></div>
-                <div class="profil_pic1"><img src="img/20230713_175204.webp" alt="profil_pic"></div>
+            <div class="keyword">3-nøgleord om mig</div>
+            <div class="keywords">
+                <div class="creative">
+                    <div><img src="img/creative.webp" alt="creative"></div>
+                    <div class="overline">Creative</div>
+                </div>
+                <div class="learner">
+                    <div><img src="img/learner.webp" alt="learner"></div>
+                    <div class="overline">Learner</div>
+                </div>
+                <div class="challenging">
+                    <div><img src="img/challenging.webp" alt="challenging"></div>
+                    <div class="overline">Challenging</div>
+                </div>
             </div>
         </section>
         <section class="kontakt">
@@ -96,8 +114,52 @@
                 <div class="kontaktinfo">Kontakt</div>
             </div>
             <div class="underskrift_kontakt">Any question?</div>
+            <h3>Contact Form</h3>
 
-
+            <div class="container">
+                <form action="/action_page.php">
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="fname">First Name</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="lname">Last Name</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="country">Country</label>
+                        </div>
+                        <div class="col-75">
+                            <select id="country" name="country">
+                                <option value="australia">Australia</option>
+                                <option value="canada">Canada</option>
+                                <option value="usa">USA</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="col-75">
+                            <textarea id="subject" name="subject" placeholder="Write something.."
+                                style="height:200px"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
         </section>
 
     </main>
