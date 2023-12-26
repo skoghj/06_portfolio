@@ -114,52 +114,43 @@
                 <div class="kontaktinfo">Kontakt</div>
             </div>
             <div class="underskrift_kontakt">Any question?</div>
-            <h3>Contact Form</h3>
+            <div class="kontakt_col3">
+                <div class="kontakt_oplysninger">
+                    <div class="contact_me">Jeg ser frem til at høre fra dig!</div>
+                    <div class="ask">Du er velkommen til at stille spørgsmål.
+                    </div>
+                    <div class="opkaldt"><i class="fa-solid fa-phone"></i> 50 38 47 43</div>
+                    <div class="website"><i class="fa-solid fa-house"></i> www. hjb.dk</div>
+                    <div class="e_mail"><i class="fa-solid fa-envelope"></i> huba0001@stud.kea.dk</div>
+                    <div class="instagram"><i class="fa-brands fa-square-instagram"></i> @hjskog</div>
+                    <div class="facebook"><i class="fa-brands fa-facebook"></i> skoghj@gmail.com</div>
+                </div>
+                <div class="form">
+                    <form name="kontakt" action="form.html" netlify>
 
-            <div class="container">
-                <form action="/action_page.php">
-                    <div class="row">
-                        <div class="col-25">
-                            <label for="fname">First Name</label>
+                        <!-- Formular-indhold -->
+                        <div class="form-felt">
+                            <label for="fornavn">Fornavn</label>
+                            <input id="fornavn" name="fnavn" type="text">
                         </div>
-                        <div class="col-75">
-                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                        <div class="form-felt">
+                            <label for="efternavn">Efternavn</label>
+                            <input id="efternavn" name="enavn" type="text">
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-25">
-                            <label for="lname">Last Name</label>
+
+                        <div class="form-felt">
+                            <label for="email">E-mail</label>
+                            <input id="email" name="email" type="email">
                         </div>
-                        <div class="col-75">
-                            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        <div class="form-felt">
+                            <label>
+                                Besked (valgfri) <br>
+                                <textarea name="besked" class="styled-textarea"></textarea>
+                            </label>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-25">
-                            <label for="country">Country</label>
-                        </div>
-                        <div class="col-75">
-                            <select id="country" name="country">
-                                <option value="australia">Australia</option>
-                                <option value="canada">Canada</option>
-                                <option value="usa">USA</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-25">
-                            <label for="subject">Subject</label>
-                        </div>
-                        <div class="col-75">
-                            <textarea id="subject" name="subject" placeholder="Write something.."
-                                style="height:200px"></textarea>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <input type="submit" value="Submit">
-                    </div>
-                </form>
-            </div>
+                        <button class="button">Indsend</button>
+                    </form>
         </section>
 
     </main>
