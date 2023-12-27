@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Arapey&display=swap" rel="stylesheet">
-    <title>Home</title>
+    <title>Om mig</title>
 </head>
 
 <body>
@@ -19,7 +19,15 @@
         <div class="navbar" id="myNavbar">
             <a href="index.html" CLASS="LOGO"><img src="img/logo_blue.webp" alt="logo"></a>
             <a href="forside.html">Home</a>
-            <a href="portfolio.html">Portfolio</a>
+            <div class="dropdown">
+                <a href="portfolio.html" class="dropbtn">Portfolio<i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="#">Tema 02</a>
+                    <a href="#">Tema 03</a>
+                    <a href="#">Tema 04</a>
+                    <a href="#">Tema 05</a>
+                </div>
+            </div>
             <a href="about.html">Om mig</a>
             <a href="kontakt.html">Kontakt</a>
         </div>
@@ -28,32 +36,89 @@
         <div clasS="om_mig">Om mig</div>
         <div class="whoami">Who am I?</div>
     </div>
-    <section class="about">
-        <div class="profil">
-            <div class="om_mig1"><img src="img/profil.webp" alt="Profile"></div>
-            <div class="om_tekst">Hej! jeg hedder Hui-jin (Heejin) og kommer fra
-                Sydorea.
-                Jeg er bosat i Danmark og studerer Multimediedesign. <br>
-                Hvis du ønsker at vide mere om mig, er du velkommen til at <span class="klik">klikke
-                    her.</span></div>
-        </div>
-        <div class="keyword">3-nøgleord om mig</div>
-        <div class="keywords">
-            <div class="creative">
-                <div><img src="img/creative.webp" alt="creative"></div>
-                <div class="overline">Creative</div>
-            </div>
-            <div class="learner">
-                <div><img src="img/learner.webp" alt="learner"></div>
-                <div class="overline">Learner</div>
-            </div>
-            <div class="challenging">
-                <div><img src="img/challenging.webp" alt="challenging"></div>
-                <div class="overline">Challenging</div>
+    <section class="beskrivelse_om_mig">
+        <img class="me" src="img/20230730_124056.webp" alt="me">
+        <div class="creative_key"> <img src="img/creative.webp" alt="creative">
+            <div class="text1">Mit navn er Hui-jin. Jeg kommer fra Sydkorea. For at vise min personlighed og
+                kompetencer gennem mit CV, har jeg valgt tre nøgleord: <br>
             </div>
         </div>
+        <div class="text2">
+            <div class="text1_keywords">Kreativ,Lærenem og Challenging</div>Jeg nyder at udforske
+            og erfare nye ting, og jeg stræber konstant efter at lære og udfordre mig selv.
+        </div>
+        <img class="learner_key" src="img/learner.webp" alt="learner">
+        <img class="challenging_key" src="img/challenging.webp" alt="challenging">
+        <div class="text3">I mine tidligere projekter har jeg bestræbt mig på at tilgå dem på en kreativ måde og
+            skabe
+            resultater gennem læring. At flytte fra Korea til Danmark har været en stor udfordring, men denne
+            oplevelse
+            har givet mig muligheden for at lære om en ny kultur og et nyt sprog. Jeg tror, at denne erfaring vil
+            være
+            en stærk drivkraft for fleksibilitet og diversitet i mit fremtidige designarbejde.</div>
+        </div>
+    </section>
+    <div class="cv_overskrift">
+        <div clasS="om_mig_cv">CV</div>
+    </div>
+    <section>
+        <div class="cv">
+            <div class="portræt">
+                <img src="img/profil.webp" alt="portræt">
+                Navn: Hui-jin Bak <br>
+                Nationalitet: Sydkorea <br>
+                Ældre: 36 år <br><br>
+                <div class="website"><i class="fa-solid fa-house"></i> www.hjb.dk</div>
+                <div class="opkaldt"><i class="fa-solid fa-phone"></i> 50 38 47 43</div>
+            </div>
+            <div class="uddannelse">
+                <div class="overskrift_uddannelse">Uddannelse</div>
+                <span style="font-weight: bold;">I Sydkorea </span> <br>
+                Electronic publishing design <br>
+                <span style="font-weight: bold;">I Danmark</span> <br>
+                Sprogskole <br>
+                Jeg studerer i øjeblikket MMD på KEA
+            </div>
+            <div class="kompentencer">
+                <div class="overskrift_kompentencer">kompetencer</div>
+                Html/ Css/ JavaScript <br>
+                Adobe programer
+                - Ai/Ps/Pr/Au
+                Figma
+            </div>
+            <div class="job">
+                <div class="overskrift_job">Job</div>
+                <span style="font-weight: bold;">I Sydkorea </span> <br>
+                Print editorial design<br>
+                <span style="font-weight: bold;">I Danmark</span> <br>
+                Synsklinik <br>
+                Matas
+            </div>
+            <div class="Erfaring">
+                <div class="overskrift_erfaring">Efaring</div>
+                <span style="font-weight: bold;">Kulturelle oplevelse</span>
+                <div>i Japan i et år</div>
+                <div>i Australia i to år</div>
+                <div>i Sverige i 6 måneder</div>
+            </div>
+            <div class="Sprog">
+                <div class="overskrift_sprog">Sprog</div>
+                <div>Koreansk:Modersmål</div>
+                <div>Janpansk:Mellemliggende</div>
+                <div>Engelsk:Mellemliggende</div>
+                <div>Dansk: bestående af A-niveau </div>
+            </div>
+            <div class="hobby">
+                <div class="overskrift_hobby">Interesser</div>
+                <div>Film</div>
+                <div>Musik</div>
+                <div>Mad</div>
+            </div>
+    </section>
 
 
+
+    <script src="portfolio.js" defer></script>
 </body>
 
 </html>

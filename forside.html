@@ -19,7 +19,15 @@
         <div class="navbar" id="myNavbar">
             <a href="index.html" CLASS="LOGO"><img src="img/logo_blue.webp" alt="logo"></a>
             <a href="forside.html">Home</a>
-            <a href="portfolio.html">Portfolio</a>
+            <div class="dropdown">
+                <a href="portfolio.html" class="dropbtn">Portfolio<i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="#">Tema 02</a>
+                    <a href="#">Tema 03</a>
+                    <a href="#">Tema 04</a>
+                    <a href="#">Tema 05</a>
+                </div>
+            </div>
             <a href="about.html">Om mig</a>
             <a href="kontakt.html">Kontakt</a>
         </div>
@@ -89,8 +97,9 @@
                 <div class="om_tekst">Hej! jeg hedder Hui-jin (Heejin) og kommer fra
                     Sydorea.
                     Jeg er bosat i Danmark og studerer Multimediedesign. <br>
-                    Hvis du ønsker at vide mere om mig, er du velkommen til at <span class="klik">klikke
-                        her.</span></div>
+                    Hvis du ønsker at vide mere om mig, er du velkommen til at <span class="klik"><a
+                            href="about.html">klikke
+                            her.</a></span></div>
             </div>
             <div class="keyword">3-nøgleord om mig</div>
             <div class="keywords">
@@ -119,14 +128,14 @@
                     <div class="ask">Du er velkommen til at stille spørgsmål.
                     </div>
                     <div class="opkaldt"><i class="fa-solid fa-phone"></i> 50 38 47 43</div>
-                    <div class="website"><i class="fa-solid fa-house"></i> www. hjb.dk</div>
+                    <div class="website"><i class="fa-solid fa-house"></i> www.hjb.dk</div>
                     <div class="e_mail"><i class="fa-solid fa-envelope"></i> huba0001@stud.kea.dk</div>
                     <div class="instagram"><i class="fa-brands fa-square-instagram"></i> @hjskog</div>
                     <div class="facebook"><i class="fa-brands fa-facebook"></i> skoghj@gmail.com</div>
                 </div>
 
                 <div class="form">
-                    <form name="kontakt" action="form.html" method="POST" data-netlify="true">
+                    <form name="kontakt" action="form.html" netlify>
                         <!-- Formular-indhold -->
                         <div class="form-felt">
                             <label for="fornavn">Fornavn</label>
