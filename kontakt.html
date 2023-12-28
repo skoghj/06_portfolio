@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c5d83fc88a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arapey&display=swap" rel="stylesheet">
+    <title>Kontakt</title>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="burger" id="burgerIcon"><i class="fa-solid fa-bars"></i></a>
+        <div class="navbar" id="myNavbar">
+            <a href="index.html" CLASS="LOGO"><img src="img/logo_blue.webp" alt="logo"></a>
+            <a href="forside.html">Home</a>
+            <div class="dropdown">
+                <a href="portfolio.html" class="dropbtn">Portfolio<i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="#">Tema 02</a>
+                    <a href="#">Tema 03</a>
+                    <a href="#">Tema 04</a>
+                    <a href="#">Tema 05</a>
+                </div>
+            </div>
+            <a href="about.html">Om mig</a>
+            <a href="kontakt.html">Kontakt</a>
+        </div>
+    </header>
+    <main>
+        <div class="map"><img src="img/map.webp" alt="map"></div>
+        <section class="kontakt_">
+            <div class="kontakt_overskrift">
+                <div class="kontaktinfo">Kontakt</div>
+            </div>
+            <div class="underskrift_kontakt">Any question?</div>
+
+            <div class="kontakt_col3">
+                <div class="kontakt_oplysninger">
+                    <div class="contact_me">Jeg ser frem til at høre fra dig!</div>
+                    <div class="ask">Du er velkommen til at stille spørgsmål.
+                    </div>
+                    <div class="opkaldt"><i class="fa-solid fa-phone"></i> 50 38 47 43</div>
+                    <div class="website"><i class="fa-solid fa-house"></i> www.hjb.dk</div>
+                    <div class="e_mail"><i class="fa-solid fa-envelope"></i> huba0001@stud.kea.dk</div>
+                    <div class="instagram"><i class="fa-brands fa-square-instagram"></i> @hjskog</div>
+                    <div class="facebook"><i class="fa-brands fa-facebook"></i> skoghj@gmail.com</div>
+                </div>
+
+                <div class="form">
+                    <form name="kontakt" action="form.html" netlify>
+                        <!-- Formular-indhold -->
+                        <div class="form-felt">
+                            <label for="fornavn">Fornavn</label>
+                            <input id="fornavn" name="fnavn" type="text">
+                        </div>
+
+                        <div class="form-felt">
+                            <label for="efternavn">Efternavn</label>
+                            <input id="efternavn" name="enavn" type="text">
+                        </div>
+
+                        <div class="form-felt">
+                            <label for="email">E-mail</label>
+                            <input id="email" name="email" type="email">
+                        </div>
+                        <div class="form-felt">
+                            <label>
+                                Besked (valgfri) <br>
+                                <textarea name="besked" class="styled-textarea"></textarea>
+                            </label>
+                        </div>
+                        <button class="button">Indsend</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="col_2">
+            <div class="logo_2"><img src="img/logo_blue.webp" alt="logo"></div>
+            <div class="info">Lavet af Hui-jin</div>
+            <div class="mail">E-mail:huba0001@stud.kea.dk</div>
+        </div>
+    </footer>
+    <script src="portfolio.js" defer></script>
+</body>
+
+</html>
