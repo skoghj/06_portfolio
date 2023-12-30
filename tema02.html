@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c5d83fc88a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arapey&display=swap" rel="stylesheet">
+    <title>Web</title>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="burger" id="burgerIcon"><i class="fa-solid fa-bars"></i></a>
+        <div class="navbar" id="myNavbar">
+            <a href="index.html" CLASS="LOGO"><img src="img/logo_blue.webp" alt="logo"></a>
+            <a href="forside.html">Home</a>
+            <div class="dropdown">
+                <a href="portfolio.html" class="dropbtn">Portfolio<i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="tema02.html">Tema 02</a>
+                    <a href="tema03.html">Tema 03</a>
+                    <a href="tema04.html">Tema 04</a>
+                    <a href="tema05.html">Tema 05</a>
+                </div>
+            </div>
+            <a href="about.html">Om mig</a>
+            <a href="kontakt.html">Kontakt</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="about_overskrift">
+            <div clasS="om_mig">Tema 02</div>
+            <div class="whoami">Web</div>
+        </div>
+        <div class="grid_2">
+            <article class="formål_1">
+                <div class="formål_overskrift"><span class="rækkefølge">01.</span> Hovedtemaer</div>
+                <img src="img/device_mockup.webp" alt="tema2">
+                <ul>
+                    <li>Responsivt webdesign.</li>
+                    <li>Websideopsætning.</li>
+                    <li>Hands-on færdigheder i designværktøjer.</li>
+                </ul>
+            </article>
+
+            <article class="formål_2">
+                <div class="formål_overskrift"> <span class="rækkefølge">02.</span> Formål</div>
+                <!-- Trigger the Modal -->
+                <img id="myImg" src="img/formål.webp" alt="formål">
+
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+
+                    <!-- The Close Button -->
+                    <span class="close">&times;</span>
+
+                    <!-- Modal Content (The Image) -->
+                    <img class="modal-content" src="img/formål.webp" id="img01" alt="modal-content">
+                </div>
+
+                <div class="formål_beskrivelse">Tilegne sig grundlæggende færdigheder i brugen af redskaber som VS Code
+                    og Figma, samtidig med
+                    at forstå faglige begreber og designprincipper.</div>
+            </article>
+        </div>
+
+        <article class="formål">
+            <div class="formål_overskrift">
+                <span class="rækkefølge">03.</span> Proces
+            </div>
+            <div class="proces_work">
+                <img src="img/wireframe.webp" alt="wireframe">
+                <img src="img/layoutdiagram.webp" alt="layoutdiagram">
+                <img src="img/inspector.webp" alt="inspector">
+                <img src="img/kode.webp" alt="kode">
+
+                <ul class="Grundlæggende">
+                    <li> <span style="font-weight: bold;">Grundlæggende HTML og CSS-træning :</span> <br>
+                        I begyndelsen fokuserede jeg på at opbygge grundlæggende færdigheder i HTML
+                        og CSS. Dette omfattede CSS boxmodellen og stylingmetoder som farvevalg og web fonte.
+                    </li>
+                    <li><span style="font-weight: bold;">Grid og Flex :</span> <br>
+                        Jeg udvidede mine layout-færdigheder ved at studere grid- og flex- i CSS. Disse værktøjer
+                        er nøglen til at skabe responsivt design.</li>
+
+                    <li><span style="font-weight: bold;">Wireframes og Layoutdiagrammer :</span> <br>
+                        Under udarbejdelsen af studiestartsprøven anvendte jeg wireframes og layoutdiagrammer som
+                        værktøjer
+                        til at strukturere min kode effektivt.</li>
+                </ul>
+                <ul class="kode">
+                    <li><span style="font-weight: bold;">Læring af nye kode :</span> <br>
+                        I processen med at udforske grid-systemet dykkede jeg ned i avancerede funktioner som 'order' og
+                        'last child'.</li>
+
+                    <li><span style="font-weight: bold;">Responsivt Design og Media queries :</span> <br>
+                        Arbejdet med studiestartsprøven gav mig en dybere forståelse af media queries.</li>
+                </ul>
+            </div>
+        </article>
+        <article class="formål">
+            <div class="formål_overskrift">
+                <span class="rækkefølge">04.</span>Færdighed
+            </div>
+            <div class="grid_5">
+                <img class="website_index" src="img/index..webp" alt="forside_pc">
+                <img class="index_02" src="img/index_mobil.webp" alt="forside_mobil">
+
+                <img class="mincomputer" src="img/min_computer.webp" alt="min_computer_pc">
+                <img class="mincomputer02" src="img/min_computer_mobil.webp" alt="min_computer_mobil">
+
+                <img class="operativ" src="img/operativsystemer.webp" alt="operativ_pc">
+                <img class="operativ02" src="img/operativsystemer_mobil.webp" alt="operativ_mobil">
+
+                <img class="komponent" src="img/komponenter.webp" alt="komponenter_pc">
+                <img class="komponent02" src="img/komponenter_mobil.webp" alt="komponenter_mobil">
+
+                <img class="galleri" src="img/galleri.webp" alt="galleri_pc">
+                <img class="galleri02" src="img/galleri_mobil.webp" alt="galleri_mobil">
+                <div class="studieprøv">
+                    <div>Jeg har fuldført studiestartsprøven ved at skabe et website, der anvender
+                        forskellige
+                        grid- og
+                        flex-layouts og samtidig er responsiv. At skabe et website med varierende layout viste sig at
+                        være
+                        en betydelig udfordring. Jeg stod over for komplekse problemer undervejs, men disse udfordringer
+                        har
+                        bidraget til min dybere forståelse af websites struktur. Specielt har jeg fået en øget
+                        indsigt i anvendelsen af media queries, grid og flex i webudvikling.
+                        Denne erfaring har været afgørende for min dygtiggørelse, idet den har tilladt mig at lære mere
+                        omkring
+                        de underliggende principper i opbygningen af websites. Især har arbejdet med responsivitet og de
+                        nævnte
+                        layoutteknologier som grid og flex givet mig en forståelse for, hvordan man skaber en dynamisk
+                        og
+                        tilpasningsdygtig webside. </div>
+                </div>
+            </div>
+        </article>
+
+        <div class="mitwebsite_prøven"><a
+                href="https://www.hjb.dk/kea/02_web/01_website/website_burgermenu/index.html">Se Studiestartsprøven
+                ➪</a>
+        </div>
+    </main>
+    <footer>
+        <div class="col_2">
+            <div class="logo_2"><img src="img/logo_blue.webp" alt="logo"></div>
+            <div class="info">Lavet af Hui-jin</div>
+            <div class="mail">E-mail:huba0001@stud.kea.dk</div>
+        </div>
+    </footer>
+    <script src="portfolio.js" defer></script>
+</body>
+
+</html>

@@ -299,6 +299,7 @@ footer {
   font-size: 4vw;
   font-family: "Arapey", serif;
   padding: 0 0 2vw 2vw;
+  color: rgb(83, 72, 72);
 }
 .beskrivelse2,
 .beskrivelse3 {
@@ -324,6 +325,9 @@ footer {
   color: #1562e7;
   letter-spacing: 1vw;
   padding-left: 2vw;
+}
+.kontakt_overskrift a {
+  color: #1562e7;
 }
 .whoami {
   font-size: 5vw;
@@ -449,6 +453,12 @@ footer {
   font-family: "roboto";
   color: rgb(83, 72, 72);
 }
+
+.instagram:hover,
+.facebook:hover {
+  color: #1562e7;
+}
+
 .col-25,
 .col-75,
 input[type="submit"] {
@@ -698,21 +708,181 @@ input[type="submit"] {
   margin: 0 auto;
   transform: translateY(-30vw);
 }
-.toggle {
-  transform: scale(2);
-}
 
 /****************Om mig*/
 
 .map {
   width: 100%;
-  height: auto;
-  object-fit: cover;
+  height: 33vw;
+  background-image: url(img/map.webp);
+  background-size: cover;
 }
+
 .kontakt_ {
   padding: 0;
 }
 
+/*****************kontakt*/
+
+.rækkefølge {
+  font-size: 14vw;
+}
+.formål_overskrift {
+  color: #be1f1f;
+  font-family: "anton", serif;
+  text-align: left;
+  font-size: 6vw;
+  padding: 2vw 0 1vw 0;
+}
+.mitwebsite_prøven {
+  font-family: "anton", serif;
+  text-align: left;
+  font-size: 6vw;
+  padding: 2vw 0 10vw 6vw;
+}
+.mitwebsite_prøven a {
+  color: #be1f1f;
+}
+.mitwebsite_prøven a:hover {
+  color: rgb(10, 100, 247);
+}
+.formål,
+.formål_1,
+.formål_2 {
+  width: 100vw;
+  height: auto;
+  margin: 0 auto;
+  padding: 0 6vw 4vw 6vw;
+  color: rgb(83, 72, 72);
+  font-family: "Arapey", serif;
+  text-align: left;
+  font-size: 4vw;
+}
+
+.formål_1,
+.formål_2 {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  color: rgb(83, 72, 72);
+  font-family: "Arapey", serif;
+  text-align: left;
+  font-size: 4vw;
+}
+.formål ul,
+.formål_1 ul {
+  padding: 2vw 0 0 6vw;
+}
+.formål_beskriv {
+  padding-top: 2vw;
+}
+.studieprøv {
+  font-family: "Arapey", serif;
+  text-align: left;
+  font-size: 4vw;
+  padding: 0 8vw 10vw 8vw;
+}
+
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: rgb(222, 235, 238);
+  padding: 4vw;
+  margin-bottom: 2vw;
+}
+
+#myImg:hover {
+  opacity: 0.7;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 100%;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content,
+#caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.proces_work img {
+  margin: 1vw;
+}
+.grid_5 {
+  display: flex;
+  flex-direction: column;
+
+  gap: 2vw;
+  width: 100%;
+  height: 100%;
+  padding: 1vw 0;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.studieprøv {
+  grid-column: 1/3;
+  padding: 0;
+}
 @keyframes pulse_kf {
   0% {
     scale: 1;
@@ -852,6 +1022,12 @@ input[type="submit"] {
   }
   .nummer {
     font-size: 7vw;
+    color: #be1f1f;
+    font-family: "Jeongnimsaji-R";
+    padding: 0 0 0 2vw;
+  }
+  .nummer:hover {
+    color: #1562e7;
   }
 
   .tema {
@@ -969,6 +1145,7 @@ input[type="submit"] {
     font-family: "roboto";
     color: rgb(83, 72, 72);
   }
+
   .form {
     width: 80%;
     padding: 0 6vw 6vw 6vw;
@@ -1020,7 +1197,7 @@ input[type="submit"] {
   .me {
     grid-column: 2/4;
     grid-row: 1/2;
-    object-fit: fil;
+    object-fit: fill;
     padding: 0;
   }
   .creative_key,
@@ -1245,5 +1422,111 @@ input[type="submit"] {
     margin: 0 auto;
     transform: translateY(-40vw);
     padding: 0 4vw 0 4vw;
+  }
+  /*************************************************portfolio*/
+  .modal-content {
+    width: 100%;
+    padding: 4vw;
+  }
+
+  .grid_2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    width: 100%;
+    height: auto;
+  }
+
+  .formål_1 {
+    grid-column: 1/2;
+    padding: 0 0 0 6vw;
+  }
+  .formål_1 ul {
+    padding: 2vw 0 0 2vw;
+  }
+  .formål_2 {
+    grid-column: 2/3;
+    padding: 0 6vw 0 2vw;
+  }
+  #myImg {
+    height: auto;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: rgb(222, 235, 238);
+    margin: 0 auto;
+  }
+
+  .formål,
+  .studieprøv {
+    font-size: 2vw;
+  }
+
+  .formål_1,
+  .formål_2 {
+    font-size: 2vw;
+  }
+  .formål img,
+  .formål_1 img,
+  .formål_2 img {
+    box-shadow: 6px 5px 5px rgb(119, 74, 64);
+  }
+
+  .formål_beskrivelse {
+    padding: 2vw 0 0 1vw;
+  }
+  .proces_work {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 1vw;
+  }
+  .grid_5 {
+    display: grid;
+    grid-template-columns: 7.5fr 1fr 7.5fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 2vw;
+    width: 100%;
+    height: 100%;
+    padding: 1vw 0;
+    object-fit: cover;
+    overflow: hidden;
+  }
+  .index_02,
+  .mincomputer02 {
+    width: 9vw;
+    height: 27vw;
+  }
+  .operativ02 {
+    width: 4.5vw;
+  }
+  .galleri02 {
+    width: 8.2vw;
+  }
+  .komponent {
+    width: 87%;
+  }
+  .komponent02 {
+    width: 4vw;
+    transform: translateX(-4vw);
+  }
+  .rækkefølge {
+    font-size: 6vw;
+  }
+  .formål_overskrift {
+    color: #be1f1f;
+    font-family: "anton", serif;
+    text-align: left;
+    font-size: 4vw;
+    padding: 2vw 0 1vw 0;
+  }
+  .studieprøv {
+    place-items: center;
+    padding: 0 2vw;
+    grid-column: 3 / span 2;
+    text-align: justify;
+  }
+  .mitwebsite_prøven {
+    padding-left: 6vw;
   }
 }
