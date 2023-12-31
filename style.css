@@ -121,35 +121,32 @@ a {
   position: relative;
 }
 .guide,
-.proces {
+.proces,
+.semester,
+.explore {
   position: absolute;
-  font-size: 3vw;
   text-align: left;
   font-family: "Jeongnimsaji-R";
   color: rgb(83, 72, 72);
-  line-height: 4vw;
 }
 .guide {
+  font-size: 3vw;
+  line-height: 4vw;
   transform: translate(19vw, -145vw);
 }
 .proces {
+  font-size: 3vw;
   transform: translate(71vw, -32vw);
 }
 
 .semester {
-  position: absolute;
   transform: translate(49vw, -72vw);
   font-size: 4vw;
-  text-align: left;
-  font-family: "Jeongnimsaji-R";
-  color: rgb(83, 72, 72);
 }
 
 .explore {
-  position: absolute;
   transform: translate(49vw, -61vw);
   font-size: 6vw;
-  text-align: left;
   font-weight: bold;
   font-family: "Anton", sans-serif;
 }
@@ -168,7 +165,7 @@ footer {
 .col_2 {
   display: flex;
   justify-content: space-between;
-  padding: 0 30px 0 30px;
+  padding: 0 30px;
 }
 .logo_2 {
   width: 12vw;
@@ -181,10 +178,10 @@ footer {
   font-size: 2vw;
   font-weight: bold;
   font-family: "GmarketSansMedium";
-  padding: 20px 0 20px 0;
+  padding: 20px 0;
 }
 
-/********************************************index*/
+/*************************************************************************************************index_mobil*/
 .col_3 {
   text-align: center;
   padding-top: 7vw;
@@ -198,23 +195,20 @@ footer {
   color: #1562e7;
   font-family: "Roboto", sans-serif;
 }
-.overskrift::before {
+.overskrift::before,
+.underskrift_1::after {
   content: ""; /* Indholdet for det pseudo-element (ingen indhold i dette tilfælde) */
   display: inline-block; /* Gør pseudo-elementet til et inline-block element, så du kan justere bredden */
   width: 23vw; /* Juster bredden af linjen efter behov */
   border-bottom: 2px solid #1562e7; /* Stil og farve af linjen */
   margin-right: 10px; /* Juster afstanden mellem linjen og teksten efter behov */
 }
-.underskrift_1 {
-  justify-content: right;
-}
 .underskrift_1::after {
-  content: "";
-  display: inline-block;
-  width: 23vw;
   height: 1px;
-  border-bottom: 2px solid #1562e7;
   margin-left: 10px;
+}
+.underskrift_1 {
+  justify-content: flex-end;
 }
 .underskrift {
   font-family: "Anton", sans-serif;
@@ -273,14 +267,14 @@ footer {
   width: 100%;
   height: 100%;
   gap: 2vw;
-  padding: 0 2vw 0 2vw;
+  padding: 0 2vw;
 }
 
 .nummer {
   font-size: 14vw;
   color: #be1f1f;
   font-family: "Jeongnimsaji-R";
-  padding: 0 0 0 2vw;
+  padding-left: 2vw;
 }
 
 .tema {
@@ -338,7 +332,8 @@ footer {
   font-family: "Roboto", sans-serif;
   justify-content: right;
 }
-.whoami::after {
+.whoami::after,
+.underskrift_kontakt::after {
   content: "";
   display: inline-block;
   width: 36vw;
@@ -359,11 +354,11 @@ footer {
 .om_tekst {
   padding: 6vw;
   font-family: "Arapey", serif;
-  line-height: 5vw;
+  line-height: 20px;
   align-items: center;
   justify-content: center;
   text-align: left;
-  font-size: 4vw;
+  font-size: 16px;
 }
 .klik a {
   font-weight: bold;
@@ -380,7 +375,7 @@ footer {
   flex-direction: column;
 }
 
-.keyword {
+.nøgleord {
   font-family: anton;
   padding-left: 2vw;
   color: rgb(83, 72, 72);
@@ -418,26 +413,21 @@ footer {
   padding-bottom: 5vw;
 }
 .underskrift_kontakt::after {
-  content: "";
-  display: inline-block;
   width: 25vw;
-  height: 1px;
-  border-bottom: 2px solid #1562e7;
-  margin-left: 10px;
 }
 
 .kontakt_oplysninger {
   padding-left: 4vw;
 }
 .contact_me {
-  font-size: 6.6vw;
+  font-size: 25px;
   font-family: "roboto";
   font-weight: bold;
   color: rgb(83, 72, 72);
   text-align: left;
 }
 .ask {
-  font-size: 4vw;
+  font-size: 15px;
   text-align: left;
   color: rgb(83, 72, 72);
   font-family: "roboto";
@@ -448,7 +438,7 @@ footer {
 .instagram,
 .facebook,
 .website {
-  font-size: 4vw;
+  font-size: 15px;
   padding-bottom: 1vw;
   font-family: "roboto";
   color: rgb(83, 72, 72);
@@ -501,27 +491,14 @@ input[type="submit"] {
   background-color: #1562e7;
   border-style: none;
 }
-#beskeden {
-  display: grid;
-  place-items: center;
-  padding: 8vw;
+#form_sendt {
   margin: 0 auto;
-  font-size: 2vw;
-  font-weight: bold;
-  font-family: "Anton", sans-serif;
-  color: #1562e7;
   text-align: center;
+  padding-top: 10%;
+  font-size: 4vw;
+  font-weight: bold;
 }
-
-.pulse {
-  animation-name: pulse_kf;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-fill-mode: both;
-  animation-timing-function: linear;
-}
-/*****************************************Om mig*/
+/*********************************************************************************************forsiden_mobil*/
 .beskrivelse_om_mig,
 .cv {
   display: flex;
@@ -530,13 +507,13 @@ input[type="submit"] {
   gap: 2vw;
   margin-bottom: 30%;
 }
-.me {
+.profil_billedet {
   padding: 0 4vw 0 4vw;
 }
 
 .text1,
-.text3,
 .text2,
+.text3,
 .profil_,
 .kompentencer,
 .job,
@@ -545,8 +522,10 @@ input[type="submit"] {
 .hobby,
 .uddannelse2 {
   font-family: "Arapey", serif;
-  line-height: 6vw;
+  line-height: 20px;
+  font-size: 16px;
   color: rgb(83, 72, 72);
+  padding-top: 10px;
 }
 .creative_key {
   padding: 0 4vw 0 4vw;
@@ -582,20 +561,19 @@ input[type="submit"] {
 }
 
 .portræt img {
-  width: 30vw;
+  width: 140px;
   margin: 0 auto;
   border-radius: 50%;
 }
-
 .profil_,
 .home_og_tlf {
-  font-size: 4vw;
+  font-size: 16px;
   font-family: "Arapey", serif;
   color: rgb(83, 72, 72);
   text-align: center;
 }
 .home_og_tlf {
-  line-height: 7vw;
+  line-height: 4vw;
 }
 
 .name_overskrift {
@@ -619,34 +597,41 @@ input[type="submit"] {
   width: 68vw;
   border-bottom: 2px solid #1562e7;
 }
-
 .om_mig_cv {
   font-size: 7vw;
   letter-spacing: 0vw;
   padding: 8vw 0 8vw 4vw;
 }
-.overskrift_uddannelse,
-.overskrift_kompentencer,
-.overskrift_job,
-.overskrift_erfaring,
-.overskrift_sprog,
-.overskrift_hobby {
+.overskrift_uddannelse {
   font-size: 6vw;
   font-family: anton;
   color: #1562e7;
   padding: 1vw 0vw 1vw 0vw;
 }
-.skole,
-.erfaring_udlande {
-  padding: 1vw 0vw 1vw 4vw;
+.overskrift_kompentencer,
+.overskrift_erfaring,
+.overskrift_job,
+.overskrift_sprog,
+.overskrift_hobby {
+  font-size: 6vw;
+  font-family: anton;
+  color: #1562e7;
+  padding: 0 0 4vw 0;
 }
-
 .uddannelse {
   padding: 0vw 4vw 2vw 4vw;
 }
-.kompentencer {
+
+.skole,
+.erfaring_udlande,
+.job,
+.kompentencer,
+.Erfaring,
+.Sprog,
+.hobby {
   padding: 1vw 0vw 1vw 4vw;
 }
+
 .adobe {
   display: flex;
   flex-direction: row;
@@ -655,39 +640,23 @@ input[type="submit"] {
   padding: 1vw 0 1vw 0;
 }
 .adobe img {
-  width: 17%;
+  width: 12%;
 }
-.job {
-  padding: 1vw 0vw 1vw 4vw;
-}
-.Erfaring {
-  padding: 1vw 0vw 1vw 4vw;
-}
-.Sprog {
-  padding: 1vw 0vw 1vw 4vw;
-}
-.hobby {
-  padding: 1vw 0vw 1vw 4vw;
+
+.flags,
+.icons {
+  display: flex;
+  flex-direction: row;
+  width: 8vw;
+  gap: 2vw;
+  padding-top: 1vw;
 }
 .flag img {
   transform: translate(45vw, 2vw);
   width: 7vw;
   height: auto;
 }
-.flags {
-  display: flex;
-  flex-direction: row;
-  width: 15vw;
-  gap: 2vw;
-  padding-top: 1vw;
-}
-.icons {
-  display: flex;
-  flex-direction: row;
-  width: 13vw;
-  gap: 2vw;
-  padding-top: 1vw;
-}
+
 .mindmap_overskrift {
   font-family: "Anton", sans-serif;
   color: #1562e7;
@@ -709,7 +678,7 @@ input[type="submit"] {
   transform: translateY(-30vw);
 }
 
-/****************Om mig*/
+/*********************************************************************************************************Om mig_mobil*/
 
 .map {
   width: 100%;
@@ -722,17 +691,28 @@ input[type="submit"] {
   padding: 0;
 }
 
-/*****************kontakt*/
+/*********************************************************************************************************kontakt_mobil*/
 
 .rækkefølge {
   font-size: 14vw;
 }
-.formål_overskrift {
+.proces_overskrift,
+.formål_overskrift,
+.færdigheder_overskrift,
+.tema_overskrift {
   color: #be1f1f;
   font-family: "anton", serif;
   text-align: left;
   font-size: 8vw;
+}
+.proces_overskrift,
+.færdigheder_overskrift {
   padding: 2vw 0 1vw 0;
+}
+
+.tema_overskrift,
+.formål_overskrift {
+  padding: 0;
 }
 .mitwebsite_prøven {
   font-family: "anton", serif;
@@ -746,18 +726,9 @@ input[type="submit"] {
 .mitwebsite_prøven a:hover {
   color: rgb(10, 100, 247);
 }
-.formål {
-  width: 100vw;
-  height: auto;
-  margin: 0 auto;
-  color: rgb(83, 72, 72);
-  font-family: "Arapey", serif;
-  text-align: left;
-  font-size: 16px;
-  padding: 0 4vw;
-}
 
-.formål_1,
+.formål,
+.temaer,
 .formål_2 {
   width: 100%;
   height: auto;
@@ -769,17 +740,11 @@ input[type="submit"] {
   padding: 0 4vw;
 }
 
-.formål_overskrift_1 {
-  padding: 0;
-  color: #be1f1f;
-  font-family: "anton", serif;
-  text-align: left;
-  font-size: 8vw;
-}
 .formål ul,
-.formål_1 ul {
+.temaer ul {
   padding: 2vw 0 0 4vw;
 }
+
 .formål_beskriv {
   padding-top: 2vw;
 }
@@ -792,6 +757,7 @@ input[type="submit"] {
   font-family: "Arapey", serif;
   text-align: left;
   font-size: 16px;
+  padding: 0;
 }
 
 /* Style the Image Used to Trigger the Modal */
@@ -828,17 +794,6 @@ input[type="submit"] {
   margin: auto;
   display: block;
   width: 100%;
-}
-
-/* Caption of Modal Image (Image Text) - Same Width as the Image */
-#caption {
-  margin: auto;
-  display: block;
-  width: 100%;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
 }
 
 /* Add Animation - Zoom in the Modal */
@@ -878,7 +833,6 @@ input[type="submit"] {
 .grid_5 {
   display: flex;
   flex-direction: column;
-
   gap: 2vw;
   width: 100%;
   height: 100%;
@@ -886,19 +840,7 @@ input[type="submit"] {
   object-fit: cover;
   overflow: hidden;
 }
-
-.studieprøv {
-  padding: 0;
-}
-@keyframes pulse_kf {
-  0% {
-    scale: 1;
-  }
-  100% {
-    scale: 1.1;
-    color: #be1f1f;
-  }
-}
+/*////////////////////////////////////////////////////////////////////////////////////////////////tema2_mobil*************/
 
 @media screen and (min-width: 700px) {
   .navbar {
@@ -925,30 +867,28 @@ input[type="submit"] {
     align-items: center;
   }
   .guide,
-  .proces {
+  .proces,
+  .semester,
+  .explore {
     position: absolute;
-    font-size: 1vw;
     text-align: left;
     font-family: "Jeongnimsaji-R";
     color: rgb(83, 72, 72);
     line-height: 2vw;
   }
   .guide {
+    font-size: 1vw;
     transform: translate(10vw, -71vw);
   }
   .proces {
+    font-size: 1vw;
     transform: translate(39vw, -15vw);
   }
   .semester {
-    position: absolute;
     transform: translate(24vw, -36vw);
     font-size: 2vw;
-    text-align: left;
-    font-family: "Jeongnimsaji-R";
-    color: rgb(83, 72, 72);
   }
   .explore {
-    position: absolute;
     transform: translate(24vw, -31vw);
     font-size: 3vw;
   }
@@ -972,7 +912,7 @@ input[type="submit"] {
   footer {
     border-top: 2px;
   }
-  /*index//////////////////////////////////*/
+  /*//////////////////////////////////////////////////////////////////////////////////////////////index_PC////*/
   .overskrift,
   .underskrift_1 {
     font-size: 1.5vw;
@@ -980,16 +920,12 @@ input[type="submit"] {
   .overskrift::before {
     width: 31vw;
   }
-  .underskrift_1 {
-    justify-content: right;
-  }
   .underskrift_1::after {
     width: 31vw;
   }
   .underskrift {
     font-size: 7vw;
   }
-
   .timeline .bar {
     display: flex;
     flex-direction: row;
@@ -1096,11 +1032,11 @@ input[type="submit"] {
   }
   .om_tekst {
     grid-column: 3/5;
-    line-height: 1.5;
     padding: 7vw 3vw;
     font-size: 2vw;
+    line-height: 3vw;
   }
-  .keyword {
+  .nøgleord {
     padding-top: 4vw;
   }
   .keywords {
@@ -1190,7 +1126,7 @@ input[type="submit"] {
     background-color: #1562e7;
     border-style: none;
   }
-  /**************om mig*/
+  /*************************************************************************************************forsiden_PC*/
   .beskrivelse_om_mig,
   .cv {
     display: grid;
@@ -1202,7 +1138,7 @@ input[type="submit"] {
   .cv_om_mig {
     transform: translateY(1vw);
   }
-  .me {
+  .profil_billedet {
     grid-column: 2/4;
     grid-row: 1/2;
     object-fit: fill;
@@ -1228,7 +1164,7 @@ input[type="submit"] {
   .text1 {
     grid-column: 4/5;
     grid-row: 1/2;
-    padding: 0 0 0 0.5vw;
+    padding: 0.5vw;
   }
   .creative_key img {
     grid-column: 4/6;
@@ -1249,7 +1185,7 @@ input[type="submit"] {
   .text2 {
     grid-column: 4/5;
     grid-row: 2/3;
-    padding: 0 0 0 0.5vw;
+    padding: 0.5vw;
   }
   .text3 {
     grid-column: 2/4;
@@ -1280,31 +1216,18 @@ input[type="submit"] {
     grid-row: 1/2;
     margin: 0 auto;
   }
-  .profil_ {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    transform: translate(3vw, 21vw);
-    font-size: 1.5vw;
-    font-family: "Arapey", serif;
-    line-height: 2vw;
-    color: rgb(83, 72, 72);
-    text-align: left;
-  }
+  .profil_,
   .home_og_tlf {
     font-size: 1.5vw;
     font-family: "Arapey", serif;
-    line-height: 2vw;
+    line-height: 2.5vw;
     color: rgb(83, 72, 72);
-    line-height: 2.2vw;
     text-align: left;
   }
-
-  .name_overskrift {
-    font-family: "Anton", sans-serif;
-    color: #1562e7;
-    transform: translateY(-9vw);
-    font-size: 7vw;
-    padding-left: 4vw;
+  .profil_ {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    transform: translate(2vw, 21vw);
   }
   .cv_og_profil {
     font-size: 2vw;
@@ -1319,7 +1242,13 @@ input[type="submit"] {
     display: inline-block;
     border-bottom: 2px solid #1562e7;
   }
-
+  .name_overskrift {
+    font-family: "Anton", sans-serif;
+    color: #1562e7;
+    transform: translateY(-9vw);
+    font-size: 7vw;
+    padding-left: 4vw;
+  }
   .om_mig_cv {
     font-size: 7vw;
     letter-spacing: 0vw;
@@ -1335,23 +1264,31 @@ input[type="submit"] {
     font-family: anton;
     color: #1562e7;
     padding-bottom: 1vw;
+    padding-top: 0;
   }
   .skole,
   .erfaring_udlande {
     padding-left: 1vw;
   }
-
+  .uddannelse,
+  .kompentencer,
+  .Erfaring,
+  .job,
+  .Sprog,
+  .hobby {
+    padding: 1vw;
+    line-height: 1.8vw;
+  }
   .uddannelse {
     grid-column: 3/4;
     grid-row: 1/2;
-    padding: 0vw 1vw 2vw 1vw;
-    line-height: 1.8vw;
+  }
+  .uddannelse2 {
+    padding-top: 0;
   }
   .kompentencer {
     grid-column: 3/4;
     grid-row: 3/4;
-    padding: 1vw;
-    line-height: 1.8vw;
     transform: translateY(-6vw);
   }
   .adobe {
@@ -1368,29 +1305,27 @@ input[type="submit"] {
   .job {
     grid-column: 3/4;
     grid-row: 2/3;
-    padding: 1vw;
-    line-height: 1.8vw;
     transform: translateY(-4vw);
   }
   .Erfaring {
     grid-column: 4/5;
     grid-row: 1/2;
-    padding: 0 0 0 1vw;
-    line-height: 1.8vw;
   }
   .Sprog {
     grid-column: 4/5;
     grid-row: 2/3;
-    padding: 1vw;
-    line-height: 1.8vw;
     transform: translateY(-4vw);
   }
   .hobby {
     grid-column: 4/5;
     grid-row: 3/4;
-    padding: 1vw;
-    line-height: 1.8vw;
     transform: translateY(-6vw);
+  }
+  .flags,
+  .icons {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1vw;
   }
   .flag img {
     width: 4vw;
@@ -1398,18 +1333,12 @@ input[type="submit"] {
     transform: translate(10vw, -4vw);
   }
   .flags {
-    display: flex;
-    flex-direction: row;
     width: 3vw;
     gap: 1vw;
-    padding-top: 1vw;
   }
   .icons {
-    display: flex;
-    flex-direction: row;
     width: 2vw;
     gap: 2vw;
-    padding-top: 1vw;
   }
   .mindmap_overskrift {
     font-family: "Anton", sans-serif;
@@ -1431,7 +1360,7 @@ input[type="submit"] {
     transform: translateY(-40vw);
     padding: 0 4vw 0 4vw;
   }
-  /*************************************************portfolio*/
+  /*****************************************************************************************************om mig_ PC*/
   .modal-content {
     width: 100%;
     padding: 4vw;
@@ -1447,7 +1376,7 @@ input[type="submit"] {
     gap: 2vw;
   }
 
-  .formål_1,
+  .temaer,
   .formål_2 {
     width: 100%;
     height: auto;
@@ -1458,13 +1387,13 @@ input[type="submit"] {
     font-size: 4vw;
     padding: 0;
   }
-  .formål_1 {
-    grid-column: 1/2;
-  }
   .formål ul {
     padding: 0vw 0px 4vw 4vw;
   }
-  .formål_1 ul {
+  .temaer {
+    grid-column: 1/2;
+  }
+  .temaer ul {
     padding: 2vw 0 0 2vw;
   }
   .formål_2 {
@@ -1478,7 +1407,6 @@ input[type="submit"] {
     background-color: rgb(222, 235, 238);
     margin: 0 auto;
   }
-
   .formål {
     width: 100vw;
     height: auto;
@@ -1486,22 +1414,24 @@ input[type="submit"] {
     color: rgb(83, 72, 72);
     font-family: "Arapey", serif;
     text-align: left;
-    font-size: 20px;
+    font-size: 1.5vw;
+    line-height: 2vw;
     padding: 0;
   }
 
-  .formål_1,
+  .temaer,
   .formål_2 {
-    font-size: 20px;
+    font-size: 1.5vw;
+    line-height: 2vw;
   }
   .formål img,
-  .formål_1 img,
+  .temaer img,
   .formål_2 img {
     box-shadow: 6px 5px 5px rgb(119, 74, 64);
   }
 
   .formål_beskrivelse {
-    padding: 2vw 0 0 1vw;
+    padding: 2vw 0 2vw 1vw;
   }
   .proces_work {
     display: grid;
@@ -1531,31 +1461,33 @@ input[type="submit"] {
   .rækkefølge {
     font-size: 6vw;
   }
+  .proces_overskrift,
+  .færdigheder_overskrift,
+  .tema_overskrift,
   .formål_overskrift {
     color: #be1f1f;
     font-family: "anton", serif;
     text-align: left;
     font-size: 4vw;
-    padding: 0 10vw;
   }
-  .formål_overskrift_1 {
-    padding: 0;
-    color: #be1f1f;
-    font-family: "anton", serif;
-    text-align: left;
-    font-size: 4vw;
+  .proces_overskrift,
+  .færdigheder_overskrift {
+    padding: 3vw 10vw;
+  }
+  .tema_overskrift,
+  .formål_overskrift {
+    padding: 3vw 0;
   }
   .mitwebsite_prøven {
     padding-left: 10vw;
     font-size: 4vw;
   }
-
   .grid_5 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
     padding: 0;
-    gap: 2vw;
+    gap: 1.5vw;
     padding: 0vw 10vw;
   }
   .grid_5 img {
@@ -1570,6 +1502,7 @@ input[type="submit"] {
     grid-column: 2/3;
     grid-row: 5/7;
     text-align: left;
-    font-size: 20px;
+    font-size: 1.5vw;
   }
+  /********************************************************************tema02_PC*******************************/
 }
