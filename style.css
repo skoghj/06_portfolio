@@ -318,7 +318,7 @@ footer {
   font-size: 14vw;
   color: #1562e7;
   letter-spacing: 1vw;
-  padding-left: 2vw;
+  padding-left: 4vw;
 }
 .kontakt_overskrift a {
   color: #1562e7;
@@ -730,7 +730,8 @@ input[type="submit"] {
 
 .work,
 .temaer,
-.purpose {
+.purpose,
+.produkt_resultat {
   width: 100%;
   height: auto;
   margin: 0 auto;
@@ -738,17 +739,14 @@ input[type="submit"] {
   font-family: "Arapey", serif;
   text-align: left;
   font-size: 16px;
-  padding: 0 4vw;
+  padding: 0 6vw;
 }
 
 .work ul,
 .temaer ul {
-  padding: 2vw 0 0 4vw;
+  padding: 4vw 0 0 4vw;
 }
 
-.formål_beskriv {
-  padding-top: 2vw;
-}
 .proces_work {
   display: flex;
   flex-direction: column;
@@ -767,7 +765,12 @@ input[type="submit"] {
   font-size: 16px;
   padding-top: 2vw;
 }
-
+.produkt_resultat {
+  padding: 2vw;
+}
+.website_beskrive {
+  padding-top: 4vw;
+}
 /* Style the Image Used to Trigger the Modal */
 #myImg {
   border-radius: 5px;
@@ -847,6 +850,68 @@ input[type="submit"] {
   overflow: hidden;
 }
 /*////////////////////////////////////////////////////////////////////////////////////////////////tema2_mobil*************/
+
+.research_ide,
+.solution {
+  display: grid;
+  gap: 4vw;
+}
+
+.design_udvikling {
+  display: grid;
+  gap: 4vw;
+}
+.crazy_8s,
+.udkast,
+.styletile {
+  padding-bottom: 4vw;
+}
+.styleboard {
+  padding-top: 4vw;
+}
+.wireframe li {
+  padding: 2vw 0;
+}
+.wirefram {
+  padding-top: 4vw;
+  padding-bottom: 4vw;
+}
+.mobil_proto,
+.test {
+  padding-top: 4vw;
+}
+.desktop_proto,
+.test {
+  padding-bottom: 4vw;
+}
+.moodboard_tekst {
+  padding: 0 4vw 4vw 4vw;
+}
+.kodesite,
+.kodesite2,
+.dokumentation {
+  padding: 4vw 0 4vw 0;
+}
+.kodesite1,
+.dokumentation,
+.presentation {
+  padding-top: 4vw;
+}
+.work .wireframe_tekst2 {
+  padding: 0 0 0 4vw;
+}
+.dokumentation a,
+.presentation a {
+  display: block;
+  font-size: 6vw;
+  color: #be1f1f;
+  text-align: left;
+  font-weight: bold;
+}
+.dokumentation a:hover,
+.presentation a:hover {
+  color: #1562e7;
+}
 
 @media screen and (min-width: 700px) {
   .navbar {
@@ -1394,12 +1459,13 @@ input[type="submit"] {
     padding: 0;
   }
   .work ul {
-    padding: 0vw 0px 4vw 4vw;
+    padding: 0vw 0px 2vw 2vw;
   }
   .temaer {
     grid-column: 1/2;
   }
-  .temaer ul {
+  .temaer ul,
+  .researchmetod {
     padding: 2vw 0 0 2vw;
   }
   #myImg {
@@ -1410,7 +1476,8 @@ input[type="submit"] {
     background-color: rgb(222, 235, 238);
     margin: 0 auto;
   }
-  .work {
+  .work,
+  .produkt_resultat {
     width: 100vw;
     height: auto;
     margin: 0 auto;
@@ -1444,7 +1511,9 @@ input[type="submit"] {
     padding: 0 10vw;
   }
   .learning li,
-  .kode li {
+  .kode li,
+  .research_metoder li,
+  .wireframe li {
     margin-bottom: 1.5vw;
   }
   .kode {
@@ -1516,18 +1585,110 @@ input[type="submit"] {
   /********************************************************************tema02_PC*******************************/
   .research_ide,
   .solution,
-  .wireframe_prototype {
+  .styletile,
+  .website_03,
+  .kodesite {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
     gap: 2vw;
     padding: 0 10vw;
   }
+
   .design_udvikling {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto auto;
     gap: 2vw;
-    padding: 0 10vw;
+    padding: 0 10vw 3vw 10vw;
+  }
+  .research_metoder li {
+    padding: 0 2vw;
+  }
+  .storyboard {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+  .crazy_8s {
+    grid-column: 3/5;
+    grid-row: 2/3;
+  }
+  .solution {
+    padding: 0 10vw 3vw 10vw;
+  }
+  .styleboard {
+    display: grid;
+    align-items: center;
+  }
+  .wireframe {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 2vw;
+    padding: 4vw 10vw 0 10vw;
+  }
+  .mobil_wire {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .desktop_wire {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .wireframe_tekst1 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .wireframe_tekst2 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .wireframe_tekst1 li,
+  .wireframe_tekst2 li {
+    padding: 0;
+  }
+  .mobil_proto {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    padding: 0;
+  }
+  .desktop_proto {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    padding: 0;
+  }
+  .test {
+    padding-top: 2vw;
+  }
+  .test_beskrive {
+    padding-top: 2vw;
+  }
+
+  .kodesite {
+    padding: 0;
+  }
+  .kodesite1,
+  .kodesite2,
+  .dokumentation,
+  .presentation {
+    padding-top: 0;
+  }
+  .dokumentation a,
+  .presentation a {
+    display: block;
+    font-size: 2vw;
+    color: #be1f1f;
+    text-align: center;
+    font-weight: bold;
+  }
+  .dokumentation a:hover,
+  .presentation a:hover {
+    color: #1562e7;
+  }
+  .produkt_resultat {
+    padding-top: 4vw;
+  }
+  .website_beskrive {
+    padding-top: 0;
   }
 }
