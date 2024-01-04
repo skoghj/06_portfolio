@@ -1,0 +1,212 @@
+#game_mellemground,
+#game_foreground {
+  pointer-events: none;
+}
+/*mellemground og foreground giver pointer-events:none for at ikke blokere at klikke spil elementer*/
+.hide {
+  display: none;
+}
+.frys {
+  animation-play-state: paused;
+}
+
+.forsvind {
+  animation-name: forsvind_kf;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+@keyframes forsvind_kf {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.fald {
+  animation-name: fald_kf;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+@keyframes fald_kf {
+  0% {
+    transform: translateY(90%);
+  }
+
+  100% {
+    transform: translateY(800%);
+  }
+}
+
+.zoom_out {
+  animation-name: zoom_out_kf;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: both;
+}
+@keyframes zoom_out_kf {
+  from {
+    scale: 1;
+  }
+  to {
+    scale: 0;
+    transform: rotate(360deg);
+  }
+}
+
+.rotation {
+  animation-name: rotation_kf;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: both;
+  animation-timing-function: linear; /* Anvend en lineær timing-funktion for at opnå jævn rotation */
+}
+@keyframes rotation_kf {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.confetti {
+  animation-name: confetti_kf;
+  animation-duration: 0.3s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: both;
+  background-image: url("assets/svg/confetti.svg");
+  background-size: cover;
+}
+@keyframes confetti_kf {
+  from {
+    scale: 0;
+  }
+  to {
+    scale: 1.5;
+  }
+}
+.zoom_in_info {
+  animation-name: confetti_kf;
+  animation-duration: 0.3s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: both;
+  background-image: url("assets/svg/map.svg");
+  background-size: cover;
+}
+@keyframes confetti_kf {
+  from {
+    scale: 0;
+  }
+  to {
+    scale: 1.5;
+  }
+}
+.expl {
+  animation-name: expl_kf;
+  animation-duration: 0.2s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: both;
+  background-image: url("assets/svg/eksplosion.svg");
+  background-size: cover;
+}
+@keyframes expl_kf {
+  from {
+    scale: 0;
+  }
+  to {
+    scale: 2;
+  }
+}
+
+.fjern {
+  opacity: 0.5;
+  filter: grayscale(80%);
+}
+
+.pulse {
+  animation-name: pulse_kf;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+}
+
+@keyframes pulse_kf {
+  0% {
+    scale: 1;
+  }
+  100% {
+    scale: 1.1;
+  }
+}
+
+/*random position*/
+
+.pos1 {
+  left: 26%;
+}
+.pos2 {
+  left: 32%;
+}
+.pos3 {
+  left: 43%;
+}
+.pos4 {
+  left: 56%;
+}
+.pos5 {
+  left: 62%;
+}
+.pos6 {
+  left: 78%;
+}
+.pos7 {
+  left: 86%;
+}
+
+/*random delay*/
+.delay0 {
+  animation-delay: 0.5s;
+}
+.delay2 {
+  animation-delay: 1s;
+}
+.delay3 {
+  animation-delay: 2s;
+}
+.delay4 {
+  animation-delay: 3s;
+}
+.delay5 {
+  animation-delay: 5s;
+}
+
+/*timer*/
+.timer {
+  animation-name: timer_kf;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+@keyframes timer_kf {
+  0% {
+    clip-path: inset(0 0 0);
+  }
+  100% {
+    clip-path: inset(100% 0 0);
+  }
+}

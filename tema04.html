@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c5d83fc88a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arapey&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="spil.css">
+    <link rel="stylesheet" href="animation.css">
+    <title>Web</title>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="burger" id="burgerIcon"><i class="fa-solid fa-bars"></i></a>
+        <div class="navbar" id="myNavbar">
+            <a href="index.html" CLASS="LOGO"><img src="img/logo_blue.webp" alt="logo"></a>
+            <a href="forside.html">Home</a>
+            <div class="dropdown">
+                <a href="portfolio.html" class="dropbtn">Portfolio<i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="tema02.html">Tema 02</a>
+                    <a href="tema03.html">Tema 03</a>
+                    <a href="tema04.html">Tema 04</a>
+                    <a href="tema05.html">Tema 05</a>
+                </div>
+            </div>
+            <a href="about.html">Om mig</a>
+            <a href="kontakt.html">Kontakt</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="about_overskrift">
+            <div clasS="om_mig">Tema 04</div>
+            <div class="whoami">Animation</div>
+        </div>
+        <div class="grid_2">
+            <article class="temaer">
+                <div class="tema_overskrift"><span class="order">01.</span> Hovedtemaer</div>
+                <img src="img/spilmockup.webp" alt="tema4">
+                <ul>
+                    <li>Brugerinteraktion. </li>
+                    <li>Interaktivt UI-design </li>
+                    <li>Interaktive Animationer </li>
+                </ul>
+            </article>
+
+            <article class="purpose">
+                <div class="tema_overskrift"> <span class="order">02.</span> Formål</div>
+                <!-- Trigger the Modal -->
+                <img id="myImg" src="img/spil_mindmap.webp" alt="mindmap">
+
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+
+                    <!-- The Close Button -->
+                    <span class="close">&times;</span>
+
+                    <!-- Modal Content (The Image) -->
+                    <img class="modal-content" src="img/spil_mindmap.webp" id="img01" alt="modal-content">
+                </div>
+
+                <div class="beskrivelse_purpose">I dette tema var formålet at lære at skabe interaktive animationer med
+                    henblik på at udvikle et lille spil ved at anvende JavaScript sammen med CSS-animationer. Et andet
+                    mål var at opnå færdigheder inden for udvikling og skitsering af designkoncepter. Derudover trænede
+                    jeg i at tegne vektorgrafik baseret på skitser ved hjælp af Adobe Illustrator.
+
+                </div>
+            </article>
+        </div>
+
+        <article class="work">
+            <div class="proces_overskrift">
+                <span class="order">03.</span> Proces
+            </div>
+            <div class="ideudvikling">
+                <div class="moodboard_spil"><img src="img/Spilet-moodboard.webp" alt="Moodboard"></div>
+                <div class="styletile_spil"><img src="img/Styleboard-spilet.webp" alt="Styletile"></div>
+                <div class="ideudvikling_moodboard"><span style="font-weight: bold;">Ideudvikling</span><br>
+                    Jeg brugte en ordbogsmetode til idé-generering til mit spil, hvilket førte til et koncept med
+                    eventyr og fantasifulde elementer som en cottoncandy by i himlen. Jeg skabte derefter en
+                    grundlæggende
+                    historie om pirater, der udgør spillets tema. Mit moodboard illustrerer konceptet ved hjælp af
+                    billeder. Gennem processen lærte jeg, hvordan man kan bruge metoder til idé-generering.
+                </div>
+                <div class="valg_stil"><span style="font-weight: bold;">Analyse af valgte stil</span><br>I løbet af
+                    processen med at skabe
+                    styletiles for spillet kunne jeg udvikle et mere konkret spildesign. Jeg tilegnede mig viden om
+                    forskellige stilarter inden for spildesign og besluttede mig for at bruge kawaii-stilen og
+                    specifikke UI-elementer. Derudover valgte jeg farver, der passer til spillet. </div>
+                <div class="aktivitetsdiagram"><img src="img/aktivitetsdiagram.webp" alt="Aktivitetsdiagram"></div>
+                <div class="state_machine_diagram"><img src="img/statemachine.webp" alt="State Machine Diagram">
+                </div>
+                <div class="aktivitetsdiagram_spil"><span style="font-weight: bold;">Aktivitetsdiagram <br></span>I
+                    processen
+                    med at oprette aktivitetsdiagrammer fik jeg et helhedsindtryk af, hvordan systemet opfører sig i
+                    forskellige situationer, og jeg kunne let forstå spillets flow. Jeg lærte, hvordan man opretter
+                    aktivitetsdiagrammer ved hjælp af draw.io og forstod betydningen af hver form.
+                </div>
+                <div class="smd"><span style="font-weight: bold;">State Machine Diagram <br></span>Gennem oprettelsen af
+                    et State Machine-diagram til spillet opnåede jeg en klar struktur af JavaScript-koden. Igennem denne
+                    proces fik jeg en
+                    forståelse af, hvordan man strukturerer og organiserer koden, og forståelse af funktionerne,
+                    aktiviteter og begivenheder i spillet. </div>
+
+                <div class="skitser_spil">
+                    <img src="img/skiser.webp" alt="skitser">
+                </div>
+                <div class="papirprototype">
+                    <img src="img/papirprototype.webp" alt="prototype">
+                </div>
+                <div class="skitser"><span style="font-weight: bold;">Skitser</span><br>Efter at have valgt
+                    spilkonceptet, skitserede jeg karaktererne,
+                    baggrunden og UI-elementerne. I løbet af skitseringsprocessen lærte jeg om designskitser, herunder
+                    karakterstile (kawaii stil, babybias), solid drawing og principperne bag Bouba/Kiki. Derudover lærte
+                    jeg også baggrunds design principper. </div>
+                <div class="papir_prototype"><span style="font-weight: bold;">Papirprototype</span><br>Gennem
+                    udviklingen af papirprototypen til spillet fik jeg indsigter og lært flere vigtige
+                    aspekter ved spildesign. En skabelse af en papirprototype gav mig mulighed for at arbejde direkte
+                    med
+                    spilelementer som fysiske komponenter. Dette lærte mig at tænke i
+                    realtid og skabe en mere håndgribelig forbindelse mellem spilleren og spiloplevelsen. </div>
+                <img src="assets/svg/Start_side.svg" alt="">
+                <img src="assets/svg/You_Win.svg" alt="">
+                <img src="assets/svg/Spilet_side.svg" alt="">
+                <img src="assets/svg/Game_over.svg" alt="">
+                <div class="illustrator"><span style="font-weight: bold;">Illustrator</span><br>
+                    I løbet af arbejdet med Illustrator har jeg udviklet færdigheder i at udnytte værktøjerne og
+                    funktionerne i programmet. Under processen eksperimenterede jeg med farveskemaer og baggrundsd esign
+                    for at opnå den ønskede stemning og appellere til målgruppen. Dette har styrket min forståelse af,
+                    hvordan layout og komposition kan påvirke spillerens oplevelse og navigation i spillet. </div>
+                <div class="illustrator2">Ved at bruge
+                    Illustrator lærte jeg om vektorgrafik, hvilket er afgørende ikke kun for spiludvikling, men også for
+                    at sikre en skalerbar og skarp visuel kvalitet. Derudover har jeg fået indsigt i, hvordan man gemmer
+                    i SVG-format</div>
+                <img src="img/javascript.webp" alt="JavaScript">
+                <div class="javakode"><span style="font-weight: bold;">JavaScript og CSS : </span>Gennem temaet lærte
+                    jeg
+                    forskellige animationsteknikker i både CSS og JavaScript.
+                    Jeg opnåede viden om funktioner og kodebegreber samt lærte at skrive kode på en mere bæredygtig
+                    måde. Dette viste sig særligt nyttigt, da jeg arbejdede med komplekse JavaScript-opgaver. Selvom det
+                    var udfordrende at forstå JavaScript i begyndelsen, lykkedes det mig til sidst at opnå en bedre
+                    forståelse af, hvordan CSS og JavaScript kan samarbejde for at skabe interaktive
+                    brugergrænseflader.
+                </div>
+
+        </article>
+        <article class="produkt_resultat">
+            <div class="skills_overskrift">
+                <span class="order">04.</span> Produkt
+            </div>
+        </article>
+
+        <div class="spil"><img src="img/spil.webp" alt="Spillet_mockup">
+            <div class="spillet_final">Mit endelige produkt var en hjemmeside, der indeholder spillet og dokumenterer
+                min proces.
+                Gennem udviklingen af dette spil ved hjælp af CSS, JavaScript, HTML og Illustrator, lærte jeg at
+                implementere
+                komplekse animationer og interaktioner ved hjælp af CSS og JavaScript, hvilket styrkede mine evner
+                inden for front-end webudvikling. Min forståelse af HTML-strukturen blev bedre, og jeg lærte,
+                hvordan man placerer spilelementer ved hjælp af CSS-positionering.
+                Brugertesten med survey gav mig
+                feedback, som jeg kunne bruge til at forbedre spiloplevelsen. Overordne den primære faglige læring i
+                dette forløb
+                fokuserede især på JavaScript og animationsteknikker i CSS. <br>
+
+            </div>
+        </div>
+
+        <section class="spillet">
+            <div id="screen">
+                <div id="game">
+                    <div id="game_background"></div>
+                    <article id="game_elements">
+                        <div id="god1_container" class="">
+                            <div id="god1_sprite" class=""></div>
+                        </div>
+                        <div id="god2_container" class="">
+                            <div id="god2_sprite" class=""></div>
+                        </div>
+                        <div id="god3_container" class="">
+                            <div id="god3_sprite" class=""></div>
+                        </div>
+                        <div id="god4_container" class="">
+                            <div id="god4_sprite" class=""></div>
+                        </div>
+                        <div id="ond1_container" class="">
+                            <div id="ond1_sprite" class=""></div>
+                        </div>
+                        <div id="ond2_container" class="">
+                            <div id="ond2_sprite" class=""></div>
+                        </div>
+
+                        <div id="lyn1_container" class="">
+                            <div id="lyn1_sprite" class=""></div>
+                        </div>
+                        <div id="lyn2_container" class="">
+                            <div id="lyn2_sprite" class=""></div>
+                        </div>
+
+                        <div id="game_mellemground"></div>
+                        <div id="game_foreground"></div>
+                    </article>
+                    <div id="start" class="hide">
+                        <div id="start_knap"></div>
+                        <div id="rules_knap"></div>
+                        <div id="rules_map"></div>
+                        <div id="menu_kanp"></div>
+                        <div id="musicbox"></div>
+                        <img id="music_bar" src="assets/svg/music_button.svg" alt="music_bar">
+                        <img id="play_button" class="play" src="assets/svg/music_play_button.svg" alt="play">
+                        <img id="stop_button" class="stop" src="assets/svg/music_stop_button.svg" alt="stop">
+                        <img id="sound_wave" class="soundwave" src="assets/svg/soundwave.svg" alt="soundwave">
+
+                    </div>
+                    <div id="game_over" class="hide">
+                        <div id="home_knap"></div>
+                        <div id="game_over_points">DU TABT OG FIK ?? POINTS</div>
+                        <div id="genstart_knap"></div>
+                        <div id="quit_knap"><a href="tema04.html"><img src="assets/svg/Quit_button.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div id="level_complete" class="hide">
+                        <div id="home_knap_2"></div>
+                        <div id="genstart_knap_2"></div>
+                        <div id="quit_knap_2"><a href="index.html"><img src="assets/svg/Quit_button.svg" alt=""></a>
+                        </div>
+                    </div>
+
+                    <div id="game_ui">
+                        <div id="score_board"></div>
+                        <div id="liv_board">
+                            <div class="liv" id="liv_1"></div>
+                            <div class="liv" id="liv_2"></div>
+                            <div class="liv" id="liv_3"></div>
+                        </div>
+
+                    </div>
+
+                    <div id="timer_container">
+                        <img src="assets/svg/flaske.svg" id="flaske" alt="flaske">
+                        <img src="assets/svg/sand.svg" id="fyld" alt="sand">
+                    </div>
+                </div>
+            </div>
+            <div id="sounds">
+                <!-- TODO: Tilføj audio elementer her. controls(vises eller gemmer audio file på skærmen)-->
+                <audio src="lyde/Back_in_my_days.wav" id="sound1_background"></audio>
+                <audio src="lyde/NFT_World.mp3" id="sound_background"></audio>
+
+                <audio src="lyde/MP_Upper_Cut.mp3" id="sound_bomber"></audio>
+                <audio src="lyde/boom.WAV" id="sound_bomber2"></audio>
+
+                <audio src="lyde/pyrorong.wav" id="sound_cottencandy"></audio>
+                <audio src="lyde/pop.mp3" id="sound_confetti"></audio>
+
+                <audio src="lyde/lyn.wav" id="sound_lyn"></audio>
+
+                <audio src="lyde/cry.wav" id="sound_gameover"></audio>
+
+                <audio src="lyde/juhuu.wav" id="sound_complete_juhu"></audio>
+            </div>
+        </section>
+        <section class="endelig_spil">
+            <div><span style="font-weight: bold;"> <br>Koncept :</span> Mit spil handler om en lille pirat-vaskebjørn
+                ved navn Snuggy, der ønsker at indsamle minimum 15 stykker cotton candy for at modtage en skattekiste
+                fra Cotton Candy-byen i himlen.En rivaliserende pirat forsøger at forhindre Snuggy ved at kaste bomber,
+                mens det også regner med lyn. Hvis Snuggy opfylder målet, får han skattekisten som præmie; ellers
+                stjæler den anden pirat kisten.</div>
+            <div><span style="font-weight: bold;"> <br>Regler :</span> Hvis man klikker på et stykke cotton candy, får
+                man et point men hvis man klikker på et lyn, mister man et point. Hvis man klikker på en bombe, mister
+                man et liv. Spillet varer i 30 sekunder. Man har tre liv, og man skal have 15 point for at vinde.
+            </div>
+        </section>
+    </main>
+
+
+    <div class="spilhjemmesidet"><a href="https://www.hjb.dk/kea/04_animation/website/index.html">Se
+            spillets hjemmeside
+            ➪</a>
+    </div>
+
+
+
+    <footer>
+        <div class="col_2">
+            <div class="logo_2"><img src="img/logo_blue.webp" alt="logo"></div>
+            <div class="info">Lavet af Hui-jin</div>
+            <div class="mail">E-mail:huba0001@stud.kea.dk</div>
+        </div>
+    </footer>
+    <script src="animation.js"></script>
+    <script src="portfolio.js" defer></script>
+</body>
+
+</html>

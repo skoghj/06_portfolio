@@ -714,24 +714,35 @@ input[type="submit"] {
 }
 .mitwebsite_eksamen,
 .mitwebsite_resultat {
+  padding: 2vw 0 10vw 6vw;
+}
+.mitwebsite_eksamen,
+.mitwebsite_resultat,
+.spilhjemmesidet {
   font-family: "anton", serif;
   text-align: left;
   font-size: 6vw;
-  padding: 2vw 0 10vw 6vw;
+}
+
+.spilhjemmesidet {
+  padding: 2vw 0 10vw 4vw;
 }
 .mitwebsite_eksamen a,
-.mitwebsite_resultat a {
+.mitwebsite_resultat a,
+.spilhjemmesidet a {
   color: #be1f1f;
 }
 .mitwebsite_eksamen a:hover,
-.mitwebsite_resultat a:hover {
+.mitwebsite_resultat a:hover,
+.spilhjemmesidet a:hover {
   color: rgb(10, 100, 247);
 }
 
 .work,
 .temaer,
 .purpose,
-.produkt_resultat {
+.produkt_resultat,
+.spil {
   width: 100%;
   height: auto;
   margin: 0 auto;
@@ -766,7 +777,7 @@ input[type="submit"] {
   padding-top: 2vw;
 }
 .produkt_resultat {
-  padding: 2vw;
+  padding-left: 6vw;
 }
 .website_beskrive {
   padding-top: 4vw;
@@ -912,7 +923,51 @@ input[type="submit"] {
 .presentation a:hover {
   color: #1562e7;
 }
+/************************************************************************************************Tema03_mobil*/
+.moodboard_spil,
+.styletile_spil,
+.valg_stil,
+.aktivitetsdiagram {
+  padding-bottom: 4vw;
+}
+.state_machine_diagram {
+  padding-bottom: 4vw;
+}
+.skitser_spil {
+  padding-bottom: 4vw;
+  padding-top: 4vw;
+}
+.papir_prototype {
+  padding-bottom: 4vw;
+  padding-top: 0vw;
+}
+.spillet_final {
+  padding: 4vw 0 4vw 0;
+}
+.ideudvikling_moodboard {
+  padding: 1.5vw 0;
+}
+.illustrator,
+.illustrator2,
+.javakode,
+.skitser {
+  padding: 4vw 0 4vw 0;
+}
+.beskrivelse_purpose,
+.smd {
+  padding-top: 2vw;
+}
 
+.endelig_spil {
+  padding: 0vw 10vw;
+  color: rgb(83, 72, 72);
+  font-family: "Arapey", serif;
+  text-align: left;
+  font-size: 16px;
+}
+.spilhjemmesidet {
+  padding: 4vw 10vw;
+}
 @media screen and (min-width: 700px) {
   .navbar {
     display: flex;
@@ -983,7 +1038,7 @@ input[type="submit"] {
   footer {
     border-top: 2px;
   }
-  /*//////////////////////////////////////////////////////////////////////////////////////////////index_PC////*/
+  /*/ /////////////////////////////////////////////////////////////////////////////////////////////index_PC////*/
   .overskrift,
   .underskrift_1 {
     font-size: 1.5vw;
@@ -1477,7 +1532,8 @@ input[type="submit"] {
     margin: 0 auto;
   }
   .work,
-  .produkt_resultat {
+  .produkt_resultat,
+  .spil {
     width: 100vw;
     height: auto;
     margin: 0 auto;
@@ -1556,7 +1612,8 @@ input[type="submit"] {
     padding: 3vw 0;
   }
   .mitwebsite_eksamen,
-  .mitwebsite_resultat {
+  .mitwebsite_resultat,
+  .spilhjemmesidet {
     padding-left: 10vw;
     font-size: 4vw;
   }
@@ -1690,5 +1747,48 @@ input[type="submit"] {
   }
   .website_beskrive {
     padding-top: 0;
+  }
+  /*****************************************************************tema03_PC*/
+  .spil,
+  .endelig_spil,
+  .ideudvikling {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 2vw;
+    padding: 0vw 10vw;
+    color: rgb(83, 72, 72);
+    font-family: "Arapey", serif;
+    text-align: left;
+    font-size: 1.5vw;
+    line-height: 2vw;
+  }
+  .state_machine_diagram,
+  .smd,
+  .ideudvikling_moodboard,
+  .javakode {
+    padding-bottom: 0vw;
+    padding-top: 0vw;
+  }
+
+  .spilhjemmesidet {
+    padding: 0vw 10vw 4vw 10vw;
+  }
+  .skitser_spil,
+  .papir_prototype,
+  .skitser,
+  .spillet_final,
+  .illustrator2 {
+    padding-bottom: 0vw;
+    padding-top: 0vw;
+  }
+  .moodboard_spil,
+  .styletile_spil,
+  .valg_stil,
+  .aktivitetsdiagram {
+    padding-bottom: 0vw;
+  }
+  .illustrator {
+    padding: 0;
   }
 }
