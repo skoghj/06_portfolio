@@ -704,9 +704,11 @@ input[type="submit"] {
   text-align: left;
   font-size: 8vw;
 }
-.proces_overskrift,
-.skills_overskrift {
+.proces_overskrift {
   padding: 2vw 0 1vw 0;
+}
+.skills_overskrift {
+  padding: 0 6vw;
 }
 
 .tema_overskrift {
@@ -777,7 +779,7 @@ input[type="submit"] {
   padding-top: 2vw;
 }
 .produkt_resultat {
-  padding-left: 6vw;
+  padding: 0vw;
 }
 .website_beskrive {
   padding-top: 4vw;
@@ -895,9 +897,7 @@ input[type="submit"] {
 .test {
   padding-bottom: 4vw;
 }
-.moodboard_tekst {
-  padding: 0 4vw 4vw 4vw;
-}
+
 .kodesite,
 .kodesite2,
 .dokumentation {
@@ -959,14 +959,14 @@ input[type="submit"] {
 }
 
 .endelig_spil {
-  padding: 0vw 10vw;
+  padding: 0vw 6vw;
   color: rgb(83, 72, 72);
   font-family: "Arapey", serif;
   text-align: left;
   font-size: 16px;
 }
 .spilhjemmesidet {
-  padding: 4vw 10vw;
+  padding: 4vw 6vw;
 }
 @media screen and (min-width: 700px) {
   .navbar {
@@ -1514,7 +1514,7 @@ input[type="submit"] {
     padding: 0;
   }
   .work ul {
-    padding: 0vw 0px 2vw 2vw;
+    padding: 0 2vw;
   }
   .temaer {
     grid-column: 1/2;
@@ -1657,7 +1657,7 @@ input[type="submit"] {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto auto;
     gap: 2vw;
-    padding: 0 10vw 3vw 10vw;
+    padding: 0 10vw 1vw 10vw;
   }
   .research_metoder li {
     padding: 0 2vw;
@@ -1669,20 +1669,20 @@ input[type="submit"] {
   .crazy_8s {
     grid-column: 3/5;
     grid-row: 2/3;
+    padding-bottom: 3vw;
   }
   .solution {
-    padding: 0 10vw 3vw 10vw;
+    padding: 0 10vw 0vw 10vw;
   }
   .styleboard {
-    display: grid;
-    align-items: center;
+    padding-top: 0vw;
   }
   .wireframe {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
     gap: 2vw;
-    padding: 4vw 10vw 0 10vw;
+    padding: 1vw 10vw 0 10vw;
   }
   .mobil_wire {
     grid-column: 1/2;
@@ -1700,6 +1700,7 @@ input[type="submit"] {
     grid-column: 2/3;
     grid-row: 2/3;
   }
+  .wirefram,
   .wireframe_tekst1 li,
   .wireframe_tekst2 li {
     padding: 0;
@@ -1720,9 +1721,17 @@ input[type="submit"] {
   .test_beskrive {
     padding-top: 2vw;
   }
+  .desktop_proto,
+  .test {
+    padding-bottom: 0vw;
+  }
 
+  .mobil_proto,
+  .test {
+    padding-top: 0vw;
+  }
   .kodesite {
-    padding: 0;
+    padding: 0vw;
   }
   .kodesite1,
   .kodesite2,
@@ -1742,6 +1751,7 @@ input[type="submit"] {
   .presentation a:hover {
     color: #1562e7;
   }
+
   .produkt_resultat {
     padding-top: 4vw;
   }
@@ -1790,5 +1800,25 @@ input[type="submit"] {
   }
   .illustrator {
     padding: 0;
+  }
+  /****************************************************************tema4*/
+
+  .videosite,
+  .virksomhedssite,
+  .redesign {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: auto auto;
+    gap: 2vw;
+  }
+  .videosite {
+    padding: 0 10vw;
+  }
+  .virksomhedssite {
+    padding: 2vw 10vw;
+  }
+
+  .video_pleasant {
+    padding: 0 10vw;
   }
 }

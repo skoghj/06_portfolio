@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c5d83fc88a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arapey&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="spil.css">
+    <link rel="stylesheet" href="animation.css">
+    <title>Web</title>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="burger" id="burgerIcon"><i class="fa-solid fa-bars"></i></a>
+        <div class="navbar" id="myNavbar">
+            <a href="index.html" CLASS="LOGO"><img src="img/logo_blue.webp" alt="logo"></a>
+            <a href="forside.html">Home</a>
+            <div class="dropdown">
+                <a href="portfolio.html" class="dropbtn">Portfolio<i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="tema02.html">Tema 02</a>
+                    <a href="tema03.html">Tema 03</a>
+                    <a href="tema04.html">Tema 04</a>
+                    <a href="tema05.html">Tema 05</a>
+                </div>
+            </div>
+            <a href="about.html">Om mig</a>
+            <a href="kontakt.html">Kontakt</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="about_overskrift">
+            <div clasS="om_mig">Tema 05</div>
+            <div class="whoami">Indhold</div>
+        </div>
+        <div class="grid_2">
+            <article class="temaer">
+                <div class="tema_overskrift"><span class="order">01.</span> Hovedtemaer</div>
+                <img src="img/youtube.webp" alt="tema4">
+                <ul>
+                    <li>Videoproduktion </li>
+                    <li>Redesign af virksomhedens hjemmeside</li>
+                    <li>Samarbejde </li>
+                </ul>
+            </article>
+
+            <article class="purpose">
+                <div class="tema_overskrift"> <span class="order">02.</span> Formål</div>
+                <!-- Trigger the Modal -->
+                <img id="myImg" src="img/indhold_mindmap.webp" alt="mindmap">
+
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+
+                    <!-- The Close Button -->
+                    <span class="close">&times;</span>
+
+                    <!-- Modal Content (The Image) -->
+                    <img class="modal-content" src="img/indhold_mindmap.webp" id="img01" alt="modal-content">
+                </div>
+
+                <div class="beskrivelse_purpose">I dette tema var formålet at lære om videoproduktion og udvikle
+                    færdigheder til mindre video- og fotoproduktioner og forbedre kommunikation med brugerne. Desuden
+                    inkluderede formålet at redesigne en virksomheds hjemmeside som en praktisk anvendelse af
+                    færdighederne.
+                </div>
+            </article>
+        </div>
+
+        <article class="work">
+            <div class="proces_overskrift">
+                <span class="order">03.</span> Proces
+            </div>
+            <div class="videosite">
+                <div class="format"><img src="img/fileformat.webp" alt="format"></div>
+                <div class="udstyr"><img src="img/interviewudstyr.webp" alt="udstyr"></div>
+                <div class="editing"><img src="img/editing.webp" alt="edit"></div>
+                <div class="videosite1"><img src="img/videosite.webp" alt="videosite"></div>
+            </div>
+            <div class="virksomhedssite">
+                <div class="teamwork"><img src="img/scrum.webp" alt="scrum">SCRUM, Trello</div>
+                <div class="styletile_videosite"><img src="img/research_nuværende.webp" alt="research"></div>
+                <div class="preapretion"><img src="img/storyboard_video.webp"
+                        alt="storyboard">storyboard,interviewguide, </div>
+                <div class="optagelse"><img src="img/pleasant_editing.webp" alt="editing">editing</div>
+
+                <div class="ideudvikling_video"><img src="img/ideudvikling_video.webp" alt="">Ideudvikling</div>
+                <div class="github"><img src="img/github.webp" alt="github"></div>
+                <div class="redesign_site"><img src="img/redesign-website.webp" alt="redesign-website"></div>
+            </div>
+            <video controls poster="img/thumnail.webp" src="https://www.hjb.dk/kea/05_indhold/Pleasant.webm"
+                class="video_pleasant"></video>
+
+
+        </article>
+        <div class="spilhjemmesidet"><a href="https://pleasant04.netlify.app/stories">Se
+                virsomhedens redesignede hjemmeside
+                ➪</a>
+        </div>
+        <footer>
+            <div class="col_2">
+                <div class="logo_2"><img src="img/logo_blue.webp" alt="logo"></div>
+                <div class="info">Lavet af Hui-jin</div>
+                <div class="mail">E-mail:huba0001@stud.kea.dk</div>
+            </div>
+        </footer>
+        <script src="animation.js"></script>
+        <script src="portfolio.js" defer></script>
+</body>
+
+</html>
