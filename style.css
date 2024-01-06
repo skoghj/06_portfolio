@@ -1805,7 +1805,8 @@ input[type="submit"] {
 
   .videosite,
   .virksomhedssite,
-  .redesign {
+  .redesign,
+  .redesign_site {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-row: auto auto;
@@ -1818,7 +1819,54 @@ input[type="submit"] {
     padding: 2vw 10vw;
   }
 
-  .video_pleasant {
+  .redesign_site {
     padding: 0 10vw;
+  }
+
+  .video_pleasant {
+    padding: 4vw 10vw;
+  }
+
+  .carhartt,
+  .trello,
+  .styletile_moodboard,
+  .sitemap_nuværende,
+  .wireframe_nuværende,
+  .brugertest4,
+  .storyboard_video,
+  .youtube_video {
+    color: #be1f1f;
+  }
+  .carhartt:hover,
+  .trello:hover,
+  .styletile_moodboard:hover,
+  .sitemap_nuværende:hover,
+  .wireframe_nuværende:hover,
+  .brugertest4:hover,
+  .storyboard_video:hover,
+  .youtube_video:hover {
+    color: #1562e7;
+  }
+  .se_videositet {
+    display: grid;
+    font-family: "anton", serif;
+    text-align: left;
+    font-size: 4vw;
+    color: #be1f1f;
+    padding: 4vw 0;
+  }
+  .se_videositet:hover {
+    color: #1562e7;
+  }
+  .redesign_site {
+    grid-column: 1/2;
+  }
+  .resultat_redesign {
+    display: grid;
+    grid-column: 2/3;
+    padding: 0;
+  }
+  .produkt_resultat_video {
+    padding-top: 2vw;
   }
 }
