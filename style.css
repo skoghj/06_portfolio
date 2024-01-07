@@ -256,9 +256,8 @@ footer {
 }
 
 .projekt {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto;
+  display: flex;
+  flex-direction: column;
   object-fit: contain;
   width: 100%;
   height: 100%;
@@ -284,23 +283,16 @@ footer {
   padding: 0 0 1vw 2vw;
   font-weight: bold;
 }
+
 .beskrivelse2,
 .beskrivelse3,
 .beskrivelse4,
 .beskrivelse5,
 .beskrivelse6 {
-  font-size: 4vw;
+  font-size: 16px;
   font-family: "Arapey", serif;
   padding: 0 0 2vw 2vw;
   color: rgb(83, 72, 72);
-}
-.beskrivelse2,
-.beskrivelse3 {
-  height: 16vw;
-}
-.beskrivelse4,
-.beskrivelse5 {
-  height: 25vw;
 }
 
 .tema_pic_2,
@@ -419,7 +411,7 @@ footer {
   font-family: "roboto";
 }
 .contact_me {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
 }
 .ask {
@@ -448,7 +440,7 @@ input[type="submit"] {
 }
 .form {
   width: 100%;
-  padding: 4vw 6vw 6vw 6vw;
+  padding: 4vw 10vw 8vw 8vw;
 }
 .form-felt {
   display: flex;
@@ -528,10 +520,10 @@ input[type="submit"] {
 }
 .profil_keywords {
   font-family: anton;
-  font-size: 7vw;
+  font-size: 25px;
   text-align: center;
   padding: 4vw;
-  color: rgb(83, 72, 72);
+  color: #be1f1f;
 }
 .portrait img {
   width: 140px;
@@ -600,12 +592,19 @@ input[type="submit"] {
 .overskrift_job,
 .overskrift_sprog,
 .overskrift_hobby {
-  font-size: 6vw;
+  font-size: 25px;
   font-family: anton;
   color: #1562e7;
-  padding: 2vw 0;
   border-top: 2px solid #1562e7;
 }
+.overskrift_kompentencer,
+.overskrift_erfaring,
+.overskrift_job,
+.overskrift_sprog,
+.overskrift_hobby {
+  padding: 3vw 0;
+}
+
 .job,
 .Erfaring,
 .kompentencer,
@@ -632,19 +631,26 @@ input[type="submit"] {
   padding: 1vw 0 1vw 0;
 }
 .adobe img {
-  width: 12%;
+  width: 32px;
+  height: auto;
 }
 .flags,
 .icons {
   display: flex;
   flex-direction: row;
-  width: 8vw;
   gap: 2vw;
   padding-top: 1vw;
 }
+.icons {
+  width: 22px;
+  transform: translateY(-14px);
+}
+.flags {
+  width: 32px;
+}
 .flag img {
   transform: translate(45vw, 2vw);
-  width: 7vw;
+  width: 40px;
   height: auto;
 }
 
@@ -664,17 +670,18 @@ input[type="submit"] {
 /*********************************************************************************************************kontakt*/
 
 .order {
-  font-size: 14vw;
+  font-size: 40px;
 }
 .proces_overskrift,
 .skills_overskrift,
 .tema_overskrift,
 .videoprodukt_overskrift,
-.produkt_overskrift {
+.produkt_overskrift,
+.studieproven {
   color: #be1f1f;
   font-family: "anton", serif;
   text-align: left;
-  font-size: 8vw;
+  font-size: 24px;
 }
 .videoprodukt_overskrift {
   padding-top: 2vw;
@@ -682,9 +689,7 @@ input[type="submit"] {
 .proces_overskrift {
   padding: 2vw 0 1vw 0;
 }
-.skills_overskrift {
-  padding: 0 2vw;
-}
+
 .tema_overskrift {
   padding-top: 2vw;
 }
@@ -696,7 +701,7 @@ input[type="submit"] {
 .spilhjemmesidet {
   font-family: "anton", serif;
   text-align: left;
-  font-size: 6vw;
+  font-size: 24px;
 }
 .spilhjemmesidet {
   padding: 2vw 0 10vw 4vw;
@@ -728,7 +733,7 @@ input[type="submit"] {
 }
 
 .work ul {
-  padding: 2vw 0 0 4vw;
+  padding-left: 4vw;
 }
 .temaer ul {
   padding: 2vw 0 0 4vw;
@@ -855,6 +860,9 @@ input[type="submit"] {
 .wireframe li {
   padding-top: 2vw;
 }
+.desktop_wire {
+  padding-bottom: 4vw;
+}
 .wirefram,
 .kodesite,
 .kodesite2,
@@ -869,16 +877,23 @@ input[type="submit"] {
 .test {
   padding-top: 4vw;
 }
-.work .wireframe_tekst2 {
+.research_metoder div {
+  padding-bottom: 12px;
+}
+.work {
   padding-left: 4vw;
+}
+.wireframe_tekst2 {
+  padding-left: 0;
 }
 .dokumentation a,
 .presentation a {
   display: block;
-  font-size: 6vw;
+  font-size: 24px;
   color: #be1f1f;
   text-align: left;
   font-weight: bold;
+  font-family: "Anton", sans-serif;
 }
 .dokumentation a:hover,
 .presentation a:hover {
@@ -888,6 +903,7 @@ input[type="submit"] {
 .mitwebsite_resultat {
   padding: 2vw 0 10vw 0vw;
 }
+
 /************************************************************************************************Tema03*/
 .moodboard_spil,
 .styletile_spil,
@@ -898,7 +914,7 @@ input[type="submit"] {
   padding-bottom: 4vw;
 }
 .produkt_overskrift {
-  padding-left: 6vw;
+  padding: 1vw 0 1vw 6vw;
 }
 
 .skitser_spil {
@@ -944,9 +960,8 @@ input[type="submit"] {
 .sitemap_nuværende,
 .wireframe_nuværende,
 .brugertest4,
-.storyboard_video,
-.youtube_video {
-  color: #be1f1f;
+.storyboard_video {
+  color: #1562e7;
 }
 .carhartt:hover,
 .trello:hover,
@@ -956,15 +971,16 @@ input[type="submit"] {
 .brugertest4:hover,
 .storyboard_video:hover,
 .youtube_video:hover {
-  color: #1562e7;
+  color: #be1f1f;
 }
-.se_videositet {
+.se_videositet,
+.youtube_video {
   display: grid;
   font-family: "anton", serif;
   text-align: left;
-  font-size: 4vw;
+  font-size: 3vw;
   color: #be1f1f;
-  padding: 4vw 0;
+  padding: 2vw 0;
 }
 .se_videositet:hover {
   color: #1562e7;
@@ -984,6 +1000,20 @@ input[type="submit"] {
 }
 .video_pleasant {
   padding: 2vw 6vw;
+}
+.format div,
+.teamwork div {
+  padding-bottom: 14px;
+}
+.se_videositet {
+  font-size: 24px;
+}
+.se_videositet,
+.youtube_video {
+  font-size: 16px;
+}
+.resultat_redesign {
+  padding-top: 4vw;
 }
 
 @media screen and (min-width: 700px) {
@@ -1109,31 +1139,34 @@ input[type="submit"] {
     gap: 2vw;
     padding: 0 8vw 0 8vw;
   }
+
   .nummer {
-    font-size: 7vw;
+    font-size: 6vw;
   }
   .tema {
-    font-size: 2.5vw;
-    padding-left: 1vw;
+    font-size: 2vw;
+    padding: 0 0 0 1vw;
   }
+
   .beskrivelse2,
   .beskrivelse3,
   .beskrivelse4,
   .beskrivelse5,
   .beskrivelse6 {
-    font-size: 2vw;
+    font-size: 1.5vw;
     font-family: "Arapey", serif;
     padding-left: 1vw;
   }
   .beskrivelse2,
   .beskrivelse3,
   .beskrivelse4 {
-    height: 8vw;
+    height: 4.5vw;
+    padding-bottom: 0;
   }
 
   .beskrivelse5,
   .beskrivelse6 {
-    height: 10vw;
+    height: 6vw;
   }
   .about_overskrift {
     padding: 4vw 0;
@@ -1170,11 +1203,12 @@ input[type="submit"] {
   .introduce {
     grid-column: 3/5;
     padding: 7vw 3vw;
-    font-size: 2vw;
+    font-size: 1.5vw;
     line-height: 3vw;
   }
   .tre_keywords {
     padding-top: 4vw;
+    font-size: 4vw;
   }
   .keywords {
     display: flex;
@@ -1202,7 +1236,7 @@ input[type="submit"] {
     grid-template-rows: auto auto;
   }
   .kontakt_oplysninger {
-    padding-left: 8vw;
+    padding: 4vw 0vw 0 10vw;
   }
   .contact_me,
   .ask,
@@ -1215,7 +1249,7 @@ input[type="submit"] {
     font-family: "roboto";
   }
   .contact_me {
-    font-size: 3vw;
+    font-size: 2.2vw;
     font-weight: bold;
   }
   .ask {
@@ -1227,13 +1261,13 @@ input[type="submit"] {
   .instagram,
   .facebook,
   .website {
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     padding-bottom: 1vw;
   }
 
   .form {
     width: 100%;
-    padding: 0 6vw 6vw 6vw;
+    padding: 4vw 10vw 8vw 4vw;
     margin: 0 auto;
   }
 
@@ -1241,7 +1275,7 @@ input[type="submit"] {
     display: flex;
     flex-direction: column;
     font-family: "roboto";
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     color: #1562e7;
     padding-bottom: 1.5vw;
   }
@@ -1262,7 +1296,7 @@ input[type="submit"] {
     padding: 1vw;
     border-radius: 1vw;
     color: #e4e9f0;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     font-family: "roboto";
     background-color: #1562e7;
     border-style: none;
@@ -1344,6 +1378,7 @@ input[type="submit"] {
     font-size: 2vw;
     line-height: 2.5vw;
     padding: 1.5vw 0 0 1.5vw;
+    color: #be1f1f;
   }
 
   .learner_key {
@@ -1429,18 +1464,18 @@ input[type="submit"] {
     line-height: 1.8vw;
   }
   .uddannelse {
-    grid-column: 3/5;
+    grid-column: 3/6;
     grid-row: 1/2;
-    padding: 0;
+    padding: 0 6vw 0 0;
   }
   .uddannelse2 {
     padding-top: 0;
   }
   .kompentencer {
-    grid-column: 3/5;
+    grid-column: 3/6;
     grid-row: 3/4;
-    transform: translateY(-6vw);
-    padding: 0 4vw 4vw 0;
+    transform: translateY(-7vw);
+    padding: 0 6vw 4vw 0;
   }
   .adobe {
     display: flex;
@@ -1448,32 +1483,31 @@ input[type="submit"] {
     padding: 1vw 0 5vw 0;
   }
   .adobe img {
-    width: 2vw;
-    height: 2vw;
-    flex-grow: 1;
+    width: 3vw;
+    height: auto;
   }
   .job {
-    grid-column: 3/5;
+    grid-column: 3/6;
     grid-row: 2/3;
     transform: translateY(-4vw);
-    padding: 0;
+    padding: 0 6vw 0 0;
   }
   .Erfaring {
     grid-column: 5/8;
     grid-row: 1/2;
-    padding: 0;
+    padding: 0 0 0 6vw;
   }
   .Sprog {
     grid-column: 5/8;
     grid-row: 2/3;
     transform: translateY(-4vw);
-    padding: 0;
+    padding: 0 0 0 6vw;
   }
   .hobby {
     grid-column: 5/8;
     grid-row: 3/4;
-    transform: translateY(-6vw);
-    padding: 0 4vw 4vw 0;
+    transform: translateY(-7vw);
+    padding: 0 0 4vw 6vw;
   }
   .flags,
   .icons {
@@ -1489,6 +1523,7 @@ input[type="submit"] {
   .flags {
     width: 3vw;
     gap: 1vw;
+    transform: translateY(-14px);
   }
   .icons {
     width: 2vw;
@@ -1540,7 +1575,9 @@ input[type="submit"] {
   .produkt_resultat,
   .spil,
   .temaer,
-  .purpose {
+  .purpose,
+  .temaer ul,
+  .beskrivelse_purpose {
     margin: 0 auto;
     color: rgb(83, 72, 72);
     font-family: "Arapey", serif;
@@ -1608,21 +1645,22 @@ input[type="submit"] {
     transform: translateX(-4vw);
   }
   .order {
-    font-size: 6vw;
+    font-size: 5vw;
   }
   .proces_overskrift,
   .skills_overskrift,
+  .produkt_overskrift,
   .video_produkt,
   .tema_overskrift,
   .videoprodukt_overskrift,
-  .produkt_overskrift {
-    font-size: 4vw;
+  .studieproven {
+    font-size: 3vw;
   }
   .proces_overskrift {
     padding: 3vw 10vw;
   }
   .skills_overskrift {
-    padding: 6vw 10vw 3vw 10vw;
+    padding: 3vw 10vw;
   }
 
   .tema_overskrift {
@@ -1661,7 +1699,9 @@ input[type="submit"] {
     gap: 2vw;
     padding: 0 10vw;
   }
-
+  .desktop_wire {
+    padding-bottom: 0vw;
+  }
   .design_udvikling {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -1693,6 +1733,9 @@ input[type="submit"] {
     grid-template-rows: auto auto;
     gap: 2vw;
     padding: 1vw 10vw 0 10vw;
+  }
+  .wireframe li {
+    padding-top: 0;
   }
   .mobil_wire {
     grid-column: 1/2;
@@ -1746,13 +1789,17 @@ input[type="submit"] {
   .website_beskrive {
     padding-top: 0;
   }
+
   .dokumentation a,
-  .presentation a {
-    display: block;
+  .presentation a,
+  .youtube_video {
+    display: flex;
+    flex-direction: column;
     font-size: 2vw;
     color: #be1f1f;
-    text-align: center;
+    text-align: left;
     font-weight: bold;
+    justify-self: flex-end;
   }
 
   .dokumentation a:hover,
@@ -1761,13 +1808,23 @@ input[type="submit"] {
   }
   .research_metoder {
     grid-column: 1/2;
+    padding-bottom: 2vw;
+  }
+  .research_metoder div {
+    padding-bottom: 10px;
   }
   .moodboard {
     grid-column: 2/3;
     grid-row: 1/2;
   }
+  .skills_overskrift {
+    padding: 6vw 10vw 3vw 10vw;
+  }
+  .studieproven {
+    padding: 3vw 10vw 3vw 10vw;
+  }
 
-  /*****************************************************************tema03_PC*/
+  /*****************************************************************tema03*/
   .spil,
   .endelig_spil,
   .ideudvikling {
@@ -1789,11 +1846,11 @@ input[type="submit"] {
     padding-bottom: 0vw;
     padding-top: 0vw;
   }
-  .produkt_overskrift {
-    padding: 6vw 10vw 3vw 10vw;
-  }
   .spilhjemmesidet {
     padding: 0vw 10vw 4vw 10vw;
+  }
+  .produkt_overskrift {
+    padding: 6vw 10vw 3vw 10vw;
   }
   .skitser_spil,
   .papir_prototype,
@@ -1833,20 +1890,18 @@ input[type="submit"] {
   .redesign_site {
     padding: 0 10vw;
   }
-
-  .video_pleasant {
-    padding: 0 10vw 4vw 10vw;
-  }
-
-  .redesign_site {
+  .redesign_web {
     grid-column: 1/2;
   }
   .resultat_redesign {
-    display: grid;
     grid-column: 2/3;
     grid-row: 1/2;
     padding: 0;
   }
+  .video_pleasant {
+    padding: 0 10vw 4vw 10vw;
+  }
+
   .produkt_resultat_video {
     padding-top: 2vw;
   }
@@ -1865,5 +1920,12 @@ input[type="submit"] {
   }
   .videoprodukt_overskrift {
     padding: 0 0 3vw 10vw;
+  }
+  .format div {
+    padding-bottom: 12px;
+  }
+  .se_videositet,
+  .youtube_video {
+    font-size: 2vw;
   }
 }
