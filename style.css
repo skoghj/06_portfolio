@@ -536,6 +536,7 @@ input[type="submit"] {
   font-family: "Arapey", serif;
   color: rgb(83, 72, 72);
   text-align: center;
+  line-height: 25px;
 }
 .home_og_tlf {
   padding-bottom: 4vw;
@@ -649,7 +650,7 @@ input[type="submit"] {
   width: 32px;
 }
 .flag img {
-  transform: translate(45vw, 2vw);
+  margin: 0 auto;
   width: 40px;
   height: auto;
 }
@@ -694,7 +695,7 @@ input[type="submit"] {
   padding-top: 2vw;
 }
 .mitwebsite_eksamen {
-  padding: 2vw 0 10vw 6vw;
+  padding: 2vw 0 10vw 4vw;
 }
 .mitwebsite_eksamen,
 .mitwebsite_resultat,
@@ -887,21 +888,31 @@ input[type="submit"] {
   padding-left: 0;
 }
 .dokumentation a,
-.presentation a {
+.presentation a,
+.javakode a,
+.resultat_redesign a {
   display: block;
-  font-size: 24px;
+  font-size: 16px;
   color: #be1f1f;
   text-align: left;
-  font-weight: bold;
+  font-weight: normal;
   font-family: "Anton", sans-serif;
 }
 .dokumentation a:hover,
-.presentation a:hover {
+.presentation a:hover,
+.resultat_redesign a {
   color: #1562e7;
 }
 
 .mitwebsite_resultat {
   padding: 2vw 0 10vw 0vw;
+}
+.presentation div {
+  display: inline-block;
+  margin-right: 5px;
+}
+.pdf {
+  margin-left: 0px;
 }
 
 /************************************************************************************************Tema03*/
@@ -973,13 +984,17 @@ input[type="submit"] {
 .youtube_video:hover {
   color: #be1f1f;
 }
+.se_videositet {
+  padding: 2vw 0;
+}
 .se_videositet,
 .youtube_video {
   display: grid;
   font-family: "anton", serif;
   text-align: left;
-  font-size: 3vw;
   color: #be1f1f;
+}
+.youtube_video {
   padding: 2vw 0;
 }
 .se_videositet:hover {
@@ -1005,9 +1020,7 @@ input[type="submit"] {
 .teamwork div {
   padding-bottom: 14px;
 }
-.se_videositet {
-  font-size: 24px;
-}
+
 .se_videositet,
 .youtube_video {
   font-size: 16px;
@@ -1377,7 +1390,7 @@ input[type="submit"] {
     font-family: anton;
     font-size: 2vw;
     line-height: 2.5vw;
-    padding: 1.5vw 0 0 1.5vw;
+    padding: 1.5vw 0 0 0;
     color: #be1f1f;
   }
 
@@ -1408,11 +1421,12 @@ input[type="submit"] {
     line-height: 2.5vw;
     color: rgb(83, 72, 72);
     text-align: left;
+    line-height: 2.5vw;
   }
   .profil_ {
     grid-column: 2/3;
     grid-row: 1/2;
-    transform: translate(2vw, 21vw);
+    transform: translate(0, 21vw);
   }
   .cv_og_profil {
     font-size: 2vw;
@@ -1518,7 +1532,7 @@ input[type="submit"] {
   .flag img {
     width: 4vw;
     height: auto;
-    transform: translate(10vw, -4vw);
+    transform: translate(5vw, -4vw);
   }
   .flags {
     width: 3vw;
@@ -1792,18 +1806,22 @@ input[type="submit"] {
 
   .dokumentation a,
   .presentation a,
-  .youtube_video {
+  .youtube_video,
+  .javakode a,
+  .resultat_redesign a {
     display: flex;
     flex-direction: column;
-    font-size: 2vw;
+    font-size: 1.5vw;
     color: #be1f1f;
     text-align: left;
-    font-weight: bold;
+    font-weight: normal;
     justify-self: flex-end;
   }
 
   .dokumentation a:hover,
-  .presentation a:hover {
+  .presentation a:hover,
+  .javakode a:hover,
+  .resultat_redesign a:hover {
     color: #1562e7;
   }
   .research_metoder {
@@ -1823,7 +1841,13 @@ input[type="submit"] {
   .studieproven {
     padding: 3vw 10vw 3vw 10vw;
   }
-
+  .presentation div {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .pdf {
+    margin-left: 8px;
+  }
   /*****************************************************************tema03*/
   .spil,
   .endelig_spil,
@@ -1926,6 +1950,7 @@ input[type="submit"] {
   }
   .se_videositet,
   .youtube_video {
-    font-size: 2vw;
+    font-size: 1.5vw;
+    padding: 1vw 0vw;
   }
 }
