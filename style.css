@@ -699,7 +699,8 @@ input[type="submit"] {
 }
 .mitwebsite_eksamen,
 .mitwebsite_resultat,
-.spilhjemmesidet {
+.spilhjemmesidet,
+.se_videositet {
   font-family: "anton", serif;
   text-align: left;
   font-size: 24px;
@@ -1021,14 +1022,17 @@ input[type="submit"] {
   padding-bottom: 14px;
 }
 
-.se_videositet,
 .youtube_video {
   font-size: 16px;
 }
 .resultat_redesign {
   padding-top: 4vw;
 }
-
+iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
 @media screen and (min-width: 700px) {
   .navbar {
     display: flex;
@@ -1262,7 +1266,7 @@ input[type="submit"] {
     font-family: "roboto";
   }
   .contact_me {
-    font-size: 2.2vw;
+    font-size: 3vw;
     font-weight: bold;
   }
   .ask {
@@ -1945,12 +1949,20 @@ input[type="submit"] {
   .videoprodukt_overskrift {
     padding: 0 0 3vw 10vw;
   }
-  .format div {
+  .format div,
+  .teamwork div {
     padding-bottom: 12px;
   }
-  .se_videositet,
+  .se_videositet {
+    font-size: 4vw;
+  }
   .youtube_video {
     font-size: 1.5vw;
     padding: 1vw 0vw;
+  }
+  iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
   }
 }
