@@ -122,8 +122,7 @@ a {
 
 .guide,
 .proces,
-.semester,
-.explore {
+.semester {
   position: absolute;
   text-align: left;
   font-family: "Jeongnimsaji-R";
@@ -145,16 +144,25 @@ a {
   transform: translate(49vw, -72vw);
   font-size: 4vw;
 }
-.explore {
-  transform: translate(49vw, -61vw);
-  font-size: 6vw;
+.explore a {
+  position: absolute;
+  top: 59%;
+  left: 48%;
+  font-size: 24px;
   font-weight: bold;
+  font-family: "Arapey", sans-serif;
+  font-weight: bold;
+  border: 1px solid #f9f7f4;
+  border-radius: 50px;
+  padding: 1.3vw;
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
 }
+
 .explore a {
   color: rgb(175, 20, 20);
 }
 .explore a:hover {
-  color: rgb(13, 37, 142);
+  color: #3b5bd0;
 }
 
 footer {
@@ -178,7 +186,7 @@ footer {
   padding: 20px 0;
 }
 
-/*************************************************************************************************index_mobil*/
+/*************************************************************************************************index*/
 .title {
   text-align: center;
   padding-top: 7vw;
@@ -194,10 +202,10 @@ footer {
 }
 .welcome::before,
 .folio::after {
-  content: ""; /* Indholdet for det pseudo-element (ingen indhold i dette tilfælde) */
-  display: inline-block; /* Gør pseudo-elementet til et inline-block element, så du kan justere bredden */
-  width: 23vw; /* Juster bredden af linjen efter behov */
-  border-bottom: 2px solid #1562e7; /* Stil og farve af linjen */
+  content: "";
+  display: inline-block;
+  width: 23vw;
+  border-bottom: 2px solid #1562e7;
 }
 .welcome::before {
   margin-right: 10px;
@@ -337,7 +345,7 @@ footer {
   margin-left: 10px;
 }
 
-.about_overskrift {
+.overskrift {
   padding-bottom: 15vw;
 }
 .profil_pic img {
@@ -515,9 +523,7 @@ input[type="submit"] {
   color: rgb(83, 72, 72);
   padding-top: 10px;
 }
-.cv_om_mig {
-  transform: translateY(10vw);
-}
+
 .profil_keywords {
   font-family: anton;
   font-size: 25px;
@@ -567,6 +573,9 @@ input[type="submit"] {
   margin: 0 auto;
   transform: translateY(-16vw);
   padding: 0 6vw;
+}
+.arbejde_Sydkorea {
+  padding-bottom: 10px;
 }
 .cv_og_profil {
   font-size: 4vw;
@@ -865,13 +874,24 @@ input[type="submit"] {
 .desktop_wire {
   padding-bottom: 4vw;
 }
-.wirefram,
-.kodesite,
+.wireframe,
+.sitemap,
 .kodesite2,
 .dokumentation {
   padding: 4vw 0 4vw 0;
 }
-.kodesite1,
+
+.wireframe {
+  display: flex;
+  flex-direction: column;
+}
+
+.presentation_ppt,
+.presentation {
+  order: 1;
+}
+
+.sitemap1,
 .dokumentation,
 .presentation,
 .mobil_proto,
@@ -1033,7 +1053,18 @@ iframe {
   height: auto;
   aspect-ratio: 16 / 9;
 }
+
+/******************************************************************tema05****************************/
+
 @media screen and (min-width: 700px) {
+  .explore a {
+    position: absolute;
+    left: 48%;
+    top: 45vw;
+    font-size: 2.5vw;
+    padding: 1.3vw;
+  }
+
   .navbar {
     display: flex;
     align-items: center;
@@ -1059,8 +1090,7 @@ iframe {
   }
   .guide,
   .proces,
-  .semester,
-  .explore {
+  .semester {
     position: absolute;
     text-align: left;
     font-family: "Jeongnimsaji-R";
@@ -1081,10 +1111,7 @@ iframe {
     transform: translate(24vw, -36vw);
     font-size: 2vw;
   }
-  .explore {
-    transform: translate(24vw, -31vw);
-    font-size: 3vw;
-  }
+
   footer {
     border-top: 2px solid rgb(10, 100, 247);
     width: 100%;
@@ -1185,7 +1212,7 @@ iframe {
   .beskrivelse6 {
     height: 6vw;
   }
-  .about_overskrift {
+  .overskrift {
     padding: 4vw 0;
   }
   .om_mig,
@@ -1318,7 +1345,7 @@ iframe {
     background-color: #1562e7;
     border-style: none;
   }
-  /*************************************************************************************************forsiden_PC*/
+  /*************************************************************************************************forsiden*/
   .beskrivelse_om_mig {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -1536,7 +1563,6 @@ iframe {
   .flag img {
     width: 4vw;
     height: auto;
-    transform: translate(5vw, -4vw);
   }
   .flags {
     width: 3vw;
@@ -1568,7 +1594,7 @@ iframe {
     transform: translateY(-20vw);
   }
 
-  /*****************************************************************************************************om mig_ PC*/
+  /*****************************************************************************************************om mig*/
   .modal-content {
     width: 100%;
     padding: 4vw;
@@ -1695,13 +1721,18 @@ iframe {
     box-shadow: none;
   }
   .galleri2 {
+    grid-column: 2/3;
+    grid-row: 5/6;
+  }
+  .mitwebsite_eksamen a {
+    grid-column: 2/3;
     grid-row: 6/7;
   }
   .studieprøv {
     place-items: center;
     padding: 0;
-    grid-column: 2/3;
-    grid-row: 5/7;
+    grid-column: 1/2;
+    grid-row: 6/7;
     text-align: left;
     font-size: 1.5vw;
   }
@@ -1710,7 +1741,7 @@ iframe {
   .solution,
   .styletile,
   .website_03,
-  .kodesite {
+  .sitemap {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
@@ -1771,7 +1802,6 @@ iframe {
     grid-column: 2/3;
     grid-row: 2/3;
   }
-  .wirefram,
   .wireframe_tekst1 li,
   .wireframe_tekst2 li {
     padding: 0;
@@ -1795,10 +1825,10 @@ iframe {
     padding-bottom: 0vw;
   }
 
-  .kodesite {
+  .sitemap {
     padding: 0vw;
   }
-  .kodesite1,
+  .sitemap1,
   .kodesite2,
   .dokumentation,
   .presentation,
@@ -1806,6 +1836,38 @@ iframe {
   .test,
   .website_beskrive {
     padding-top: 0;
+  }
+  .sitemap {
+    grid-column: 1/2;
+    grid-row: 6/7;
+  }
+  .kodesite {
+    grid-column: 2/3;
+    grid-row: 6/7;
+  }
+  .sitemap1 {
+    grid-column: 1/2;
+    grid-row: 7/8;
+  }
+  .kodesite2 {
+    grid-column: 2/3;
+    grid-row: 7/8;
+  }
+  .lighthouse {
+    grid-column: 1/2;
+    grid-row: 8/9;
+  }
+  .presentation_ppt {
+    grid-column: 2/3;
+    grid-row: 8/9;
+  }
+  .dokumentation {
+    grid-column: 1/2;
+    grid-row: 9/10;
+  }
+  .presentation {
+    grid-column: 2/3;
+    grid-row: 9/10;
   }
 
   .dokumentation a,
@@ -1955,6 +2017,7 @@ iframe {
   }
   .se_videositet {
     font-size: 4vw;
+    align-items: center;
   }
   .youtube_video {
     font-size: 1.5vw;
@@ -1964,5 +2027,9 @@ iframe {
     width: 100%;
     height: auto;
     aspect-ratio: 16 / 9;
+  }
+  /********************************************************************************tema05*/
+  .presentation_portfolio {
+    padding-bottom: 60px;
   }
 }
