@@ -4,14 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="robots" content="noindex">
+    <meta name="description"
+        content="I dette tema var formålet at få grundlæggende færdigheder i brugen af
+        redskaber som VS Code
+        og Figma. Derudover var det et mål at forstå faglige begreber og designprincipper.Fokus på HTML og CSS og digital produktudvikling. ">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/c5d83fc88a.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Arapey&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="spil.css">
-    <link rel="stylesheet" href="animation.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <title>Tema04_Animation</title>
 </head>
 
@@ -127,10 +133,10 @@
                     med
                     spilelementer som fysiske komponenter. Dette lærte mig at tænke i
                     realtid og skabe en mere håndgribelig forbindelse mellem spilleren og spiloplevelsen. </div>
-                <img src="assets/svg/Start_side.svg" alt="">
-                <img src="assets/svg/You_Win.svg" alt="">
-                <img src="assets/svg/Spilet_side.svg" alt="">
-                <img src="assets/svg/Game_over.svg" alt="">
+                <img src="img/spil_1.webp" alt="illustrator">
+                <img src="img/spil_2.webp" alt="illustrator">
+                <img src="img/spil_3.webp" alt="illustrator">
+                <img src="img/spil_4.webp" alt="illustrator">
                 <div class="illustrator"><strong>Illustrator : </strong>
                     I løbet af arbejdet med Illustrator har jeg udviklet færdigheder i at udnytte værktøjerne og
                     funktionerne i programmet. Under processen eksperimenterede jeg med farveskemaer og baggrundsdesign
@@ -176,117 +182,12 @@
                 især på JavaScript og animationsteknikker i CSS. <br>
             </div>
         </div>
-
-        <section class="spillet">
-            <div id="screen">
-                <div id="game">
-                    <div id="game_background"></div>
-                    <div id="game_elements">
-                        <div id="god1_container" class="">
-                            <div id="god1_sprite" class=""></div>
-                        </div>
-                        <div id="god2_container" class="">
-                            <div id="god2_sprite" class=""></div>
-                        </div>
-                        <div id="god3_container" class="">
-                            <div id="god3_sprite" class=""></div>
-                        </div>
-                        <div id="god4_container" class="">
-                            <div id="god4_sprite" class=""></div>
-                        </div>
-                        <div id="ond1_container" class="">
-                            <div id="ond1_sprite" class=""></div>
-                        </div>
-                        <div id="ond2_container" class="">
-                            <div id="ond2_sprite" class=""></div>
-                        </div>
-
-                        <div id="lyn1_container" class="">
-                            <div id="lyn1_sprite" class=""></div>
-                        </div>
-                        <div id="lyn2_container" class="">
-                            <div id="lyn2_sprite" class=""></div>
-                        </div>
-
-                        <div id="game_mellemground"></div>
-                        <div id="game_foreground"></div>
-                    </div>
-                    <div id="start" class="hide">
-                        <div id="start_knap"></div>
-                        <div id="rules_knap"></div>
-                        <div id="rules_map"></div>
-                        <div id="menu_kanp"></div>
-                        <div id="musicbox"></div>
-                        <img id="music_bar" src="assets/svg/music_button.svg" alt="music_bar">
-                        <img id="play_button" class="play" src="assets/svg/music_play_button.svg" alt="play">
-                        <img id="stop_button" class="stop" src="assets/svg/music_stop_button.svg" alt="stop">
-                        <img id="sound_wave" class="soundwave" src="assets/svg/soundwave.svg" alt="soundwave">
-
-                    </div>
-                    <div id="game_over" class="hide">
-                        <div id="home_knap"></div>
-                        <div id="game_over_points">DU TABT OG FIK ?? POINTS</div>
-                        <div id="genstart_knap"></div>
-                        <div id="quit_knap"><a href="tema04.html"><img src="assets/svg/Quit_button.svg" alt=""></a>
-                        </div>
-                    </div>
-                    <div id="level_complete" class="hide">
-                        <div id="home_knap_2"></div>
-                        <div id="genstart_knap_2"></div>
-                        <div id="quit_knap_2"><a href="index.html"><img src="assets/svg/Quit_button.svg" alt=""></a>
-                        </div>
-                    </div>
-
-                    <div id="game_ui">
-                        <div id="score_board"></div>
-                        <div id="liv_board">
-                            <div class="liv" id="liv_1"></div>
-                            <div class="liv" id="liv_2"></div>
-                            <div class="liv" id="liv_3"></div>
-                        </div>
-
-                    </div>
-
-                    <div id="timer_container">
-                        <img src="assets/svg/flaske.svg" id="flaske" alt="flaske">
-                        <img src="assets/svg/sand.svg" id="fyld" alt="sand">
-                    </div>
-                </div>
-            </div>
-            <div id="sounds">
-                <!-- TODO: Tilføj audio elementer her. controls(vises eller gemmer audio file på skærmen)-->
-                <audio src="lyde/Back_in_my_days.wav" id="sound1_background"></audio>
-                <audio src="lyde/NFT_World.mp3" id="sound_background"></audio>
-
-                <audio src="lyde/MP_Upper_Cut.mp3" id="sound_bomber"></audio>
-                <audio src="lyde/boom.WAV" id="sound_bomber2"></audio>
-
-                <audio src="lyde/pyrorong.wav" id="sound_cottencandy"></audio>
-                <audio src="lyde/pop.mp3" id="sound_confetti"></audio>
-
-                <audio src="lyde/lyn.wav" id="sound_lyn"></audio>
-
-                <audio src="lyde/cry.wav" id="sound_gameover"></audio>
-
-                <audio src="lyde/juhuu.wav" id="sound_complete_juhu"></audio>
-            </div>
-        </section>
-        <div class="endelig_spil">
-            <div><strong> <br>Koncept :</strong> Mit spil handler om en lille pirat-vaskebjørn
-                ved navn Snuggy, der ønsker at indsamle minimum 15 stykker cotton candy for at modtage en skattekiste
-                fra Cotton Candy-byen i himlen. En rivaliserende pirat forsøger at forhindre Snuggy ved at kaste bomber,
-                mens det også regner med lyn. Hvis Snuggy opfylder målet, får han skattekisten som præmie; ellers
-                stjæler den anden pirat kisten.</div>
-            <div><strong> <br>Regler :</strong> Hvis man klikker på et stykke cotton candy, får
-                man et point men hvis man klikker på et lyn, mister man et point. Hvis man klikker på en bombe, mister
-                man et liv. Spillet varer i 30 sekunder. Man har tre liv, og man skal have 15 point for at vinde.
-            </div>
-        </div>
+        <div class="spilhjemmesidet"><a href="https://www.hjb.dk/kea/04_animation/website/spil.html">Se
+                spillets hjemmeside
+                ➪</a> </div>
     </main>
-    <div class="spilhjemmesidet"><a href="https://www.hjb.dk/kea/04_animation/website/spil.html">Se
-            spillets hjemmeside
-            ➪</a>
-    </div>
+
+
     <footer>
         <div class="footer_logo"><img src="img/logo_blue.webp" alt="logo"></div>
         <div class="info">Lavet af Hui-jin</div>

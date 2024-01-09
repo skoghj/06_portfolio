@@ -29,6 +29,13 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+
+:root {
+  --primary-color: #1562e7;
+  --text-color: rgb(83, 72, 72);
+  --emphasis-color: #be1f1f;
+}
+
 header,
 footer {
   width: 100%;
@@ -38,7 +45,7 @@ footer {
 header {
   border-bottom: 2px solid rgb(10, 100, 247);
 }
-.container {
+#container {
   margin: 0 auto;
   width: 100%;
   height: auto;
@@ -55,7 +62,7 @@ header {
   font-family: GmarketSansMedium;
 }
 .navbar a {
-  color: rgb(10, 100, 247);
+  color: var(--primary-color);
   font-size: 3.5vw;
   justify-content: space-between;
   text-decoration: none;
@@ -63,7 +70,7 @@ header {
   padding-bottom: 20px;
 }
 .navbar a:hover {
-  color: rgb(209, 77, 33);
+  color: var(--emphasis-color);
 }
 .navbar.show {
   display: flex;
@@ -81,7 +88,7 @@ a {
 
 .burger {
   display: block;
-  color: rgb(10, 100, 247);
+  color: var(--primary-color);
   font-size: 20px;
   padding-left: 20px;
 }
@@ -92,7 +99,7 @@ a {
 }
 
 .dropdown .dropbtn {
-  color: rgb(10, 100, 247);
+  color: var(--primary-color);
 }
 .dropdown-content {
   display: none;
@@ -105,7 +112,7 @@ a {
 
 .dropdown-content a {
   float: none;
-  color: rgb(10, 100, 247);
+  color: var(--primary-color);
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -126,7 +133,7 @@ a {
   position: absolute;
   text-align: left;
   font-family: "Jeongnimsaji-R";
-  color: rgb(83, 72, 72);
+  color: var(--text-color);
 }
 .guide,
 .proces {
@@ -151,7 +158,6 @@ a {
   font-size: 24px;
   font-weight: bold;
   font-family: "Arapey", sans-serif;
-  font-weight: bold;
   border: 1px solid #f9f7f4;
   border-radius: 50px;
   padding: 1.3vw;
@@ -159,17 +165,17 @@ a {
 }
 
 .explore a {
-  color: rgb(175, 20, 20);
+  color: var(--emphasis-color);
 }
 .explore a:hover {
-  color: #3b5bd0;
+  color: var(--primary-color);
 }
 
 footer {
   display: flex;
   justify-content: space-between;
   padding: 0 20px;
-  border-top: 1px solid #1562e7;
+  border-top: 1px solid var(--primary-color);
   align-items: center;
 }
 .footer_logo {
@@ -179,7 +185,7 @@ footer {
 .mail,
 .social_media,
 .info {
-  color: rgb(10, 100, 247);
+  color: var(--primary-color);
   font-size: 2vw;
   font-weight: bold;
   font-family: "GmarketSansMedium";
@@ -197,7 +203,7 @@ footer {
   display: flex;
   flex-basis: 100%;
   align-items: center;
-  color: #1562e7;
+  color: var(--primary-color);
   font-family: "Roboto", sans-serif;
 }
 .welcome::before,
@@ -205,7 +211,7 @@ footer {
   content: "";
   display: inline-block;
   width: 23vw;
-  border-bottom: 2px solid #1562e7;
+  border-bottom: 2px solid var(--primary-color);
 }
 .welcome::before {
   margin-right: 10px;
@@ -220,7 +226,7 @@ footer {
   font-family: "Anton", sans-serif;
   font-weight: bold;
   font-size: 10vw;
-  color: #1562e7;
+  color: var(--primary-color);
   letter-spacing: 1vw;
 }
 .port::after {
@@ -228,11 +234,11 @@ footer {
   left: 0;
   white-space: nowrap; /* 줄 바꿈 방지 */
   color: transparent;
-  -webkit-text-stroke: 0.2vw #1562e7;
+  -webkit-text-stroke: 0.2vw var(--primary-color);
 }
 .timeline {
   margin: 10vw 6vw;
-  border-top: 2px solid #1562e7;
+  border-top: 2px solid var(--primary-color);
 }
 .timeline.bar {
   display: flex;
@@ -243,10 +249,10 @@ footer {
   padding: 0vw 6.6vw;
   font-size: 4vw;
   line-height: 2;
-  color: #1562e7;
+  color: var(--primary-color);
 }
 .active:hover {
-  color: #be1f1f;
+  color: var(--emphasis-color);
   transform: scale(2);
 }
 .active::before {
@@ -255,7 +261,7 @@ footer {
   width: 1.5vw;
   height: 1.5vw;
   border-radius: 50%;
-  background-color: #be1f1f;
+  background-color: var(--emphasis-color);
   transform: translate(1vw, -1vw);
 }
 .active::after {
@@ -274,18 +280,18 @@ footer {
 }
 .nummer {
   font-size: 12vw;
-  color: #be1f1f;
+  color: var(--emphasis-color);
   font-family: "Jeongnimsaji-R";
 }
 .nummer:hover {
-  color: #1562e7;
+  color: var(--primary-color);
 }
 .projekt a {
   padding: 0;
 }
 .tema {
   font-size: 5vw;
-  color: rgb(83, 72, 72);
+  color: var(--text-color);
   font-family: "anton";
   letter-spacing: 0.1vw;
   padding: 0 0 1vw 2vw;
@@ -300,7 +306,7 @@ footer {
   font-size: 16px;
   font-family: "Arapey", serif;
   padding: 0 0 2vw 2vw;
-  color: rgb(83, 72, 72);
+  color: var(--text-color);
 }
 
 .tema_pic_2,
@@ -315,12 +321,12 @@ footer {
 .kontakt_overskrift {
   font-family: "Anton", sans-serif;
   font-size: 14vw;
-  color: #1562e7;
+  color: var(--primary-color);
   letter-spacing: 1vw;
   padding: 4vw 4vw 0 4vw;
 }
 .kontakt_overskrift a {
-  color: #1562e7;
+  color: var(--primary-color);
 }
 .whoami,
 .kontakt_question {
@@ -328,7 +334,7 @@ footer {
   display: flex;
   flex-basis: 100%;
   align-items: center;
-  color: #1562e7;
+  color: var(--primary-color);
   font-family: "Roboto", sans-serif;
   justify-content: right;
 }
@@ -341,7 +347,7 @@ footer {
   display: inline-block;
   width: 36vw;
   height: 1px;
-  border-bottom: 2px solid #1562e7;
+  border-bottom: 2px solid var(--primary-color);
   margin-left: 10px;
 }
 
@@ -366,12 +372,12 @@ footer {
 }
 .read a {
   font-weight: bold;
-  color: #1562e7;
+  color: var(--primary-color);
   cursor: pointer;
 }
 .read a:hover {
   transform: scale(2);
-  color: #be1f1f;
+  color: var(--emphasis-color);
 }
 
 .profil {
@@ -381,7 +387,7 @@ footer {
 
 .tre_keywords {
   font-family: anton;
-  color: rgb(83, 72, 72);
+  color: var(--text-color);
   text-align: center;
   font-size: 6vw;
 }
@@ -396,7 +402,7 @@ footer {
 .creative,
 .learner,
 .challenging {
-  color: #be1f1f;
+  color: var(--emphasis-color);
   font-size: 4vw;
   font-family: "Jeongnimsaji-R";
   font-weight: bold;
@@ -415,7 +421,7 @@ footer {
 .facebook,
 .website {
   text-align: left;
-  color: rgb(83, 72, 72);
+  color: var(--text-color);
   font-family: "roboto";
 }
 .contact_me {
@@ -437,7 +443,7 @@ footer {
 
 .instagram:hover,
 .facebook:hover {
-  color: #1562e7;
+  color: var(--primary-color);
 }
 
 .col-25,
@@ -455,7 +461,7 @@ input[type="submit"] {
   flex-direction: column;
   font-family: "roboto";
   font-size: 4vw;
-  color: #1562e7;
+  color: var(--primary-color);
   padding-bottom: 2vw;
 }
 #fornavn,
@@ -479,7 +485,7 @@ input[type="submit"] {
   color: #e4e9f0;
   font-size: 4vw;
   font-family: "roboto";
-  background-color: #1562e7;
+  background-color: var(--primary-color);
   border-style: none;
 }
 #form_sendt {
@@ -520,7 +526,7 @@ input[type="submit"] {
   font-family: "Arapey", serif;
   line-height: 20px;
   font-size: 16px;
-  color: rgb(83, 72, 72);
+  color: var(--text-color);
   padding-top: 10px;
 }
 
@@ -529,7 +535,7 @@ input[type="submit"] {
   font-size: 25px;
   text-align: center;
   padding: 4vw;
-  color: #be1f1f;
+  color: var(--emphasis-color);
 }
 .portrait img {
   width: 140px;
@@ -540,7 +546,7 @@ input[type="submit"] {
 .home_og_tlf {
   font-size: 16px;
   font-family: "Arapey", serif;
-  color: rgb(83, 72, 72);
+  color: var(--text-color);
   text-align: center;
   line-height: 25px;
 }
@@ -550,12 +556,13 @@ input[type="submit"] {
 .name_overskrift,
 .mindmap_overskrift {
   font-family: "Anton", sans-serif;
-  color: #1562e7;
+  color: var(--primary-color);
   font-size: 14vw;
 }
 .name_overskrift {
-  padding-left: 4vw;
   transform: translateY(-9vw);
+  padding-left: 4vw;
+  padding-top: 8vw;
 }
 .mindmap_overskrift {
   padding: 4vw 0 0 4vw;
@@ -565,7 +572,7 @@ input[type="submit"] {
   display: inline-block;
   width: 85vw;
   transform: translate(46vw, -19vw);
-  border-bottom: 2px solid #1562e7;
+  border-bottom: 2px solid var(--primary-color);
 }
 .mindmap {
   width: 100%;
@@ -580,7 +587,7 @@ input[type="submit"] {
 .cv_og_profil {
   font-size: 4vw;
   align-items: center;
-  color: #1562e7;
+  color: var(--primary-color);
   font-family: "Roboto", sans-serif;
   justify-content: right;
   transform: translate(49vw, -10vw);
@@ -589,7 +596,7 @@ input[type="submit"] {
   content: "";
   display: inline-block;
   width: 68vw;
-  border-bottom: 2px solid #1562e7;
+  border-bottom: 2px solid var(--primary-color);
 }
 .om_mig_cv {
   font-size: 7vw;
@@ -604,8 +611,8 @@ input[type="submit"] {
 .overskrift_hobby {
   font-size: 25px;
   font-family: anton;
-  color: #1562e7;
-  border-top: 2px solid #1562e7;
+  color: var(--primary-color);
+  border-top: 2px solid var(--primary-color);
 }
 .overskrift_kompentencer,
 .overskrift_erfaring,
@@ -627,7 +634,7 @@ input[type="submit"] {
   font-family: "Arapey", serif;
   line-height: 20px;
   font-size: 16px;
-  color: rgb(83, 72, 72);
+  color: var(--text-color);
 }
 .skole,
 .erfaring_udlande {
@@ -688,7 +695,7 @@ input[type="submit"] {
 .videoprodukt_overskrift,
 .produkt_overskrift,
 .studieproven {
-  color: #be1f1f;
+  color: var(--emphasis-color);
   font-family: "anton", serif;
   text-align: left;
   font-size: 24px;
@@ -720,12 +727,12 @@ input[type="submit"] {
 .mitwebsite_eksamen a,
 .mitwebsite_resultat a,
 .spilhjemmesidet a {
-  color: #be1f1f;
+  color: var(--emphasis-color);
 }
 .mitwebsite_eksamen a:hover,
 .mitwebsite_resultat a:hover,
 .spilhjemmesidet a:hover {
-  color: rgb(10, 100, 247);
+  color: var(--primary-color);
 }
 
 .work,
@@ -914,7 +921,7 @@ input[type="submit"] {
 .resultat_redesign a {
   display: block;
   font-size: 16px;
-  color: #be1f1f;
+  color: var(--emphasis-color);
   text-align: left;
   font-weight: normal;
   font-family: "Anton", sans-serif;
@@ -922,7 +929,7 @@ input[type="submit"] {
 .dokumentation a:hover,
 .presentation a:hover,
 .resultat_redesign a {
-  color: #1562e7;
+  color: var(--primary-color);
 }
 
 .mitwebsite_resultat {
@@ -977,7 +984,7 @@ input[type="submit"] {
 
 .endelig_spil {
   padding: 0vw 6vw;
-  color: rgb(83, 72, 72);
+  color: var(--text-color);
   font-family: "Arapey", serif;
   text-align: left;
   font-size: 16px;
@@ -993,7 +1000,7 @@ input[type="submit"] {
 .wireframe_nuværende,
 .brugertest4,
 .storyboard_video {
-  color: #1562e7;
+  color: var(--primary-color);
 }
 .carhartt:hover,
 .trello:hover,
@@ -1003,7 +1010,7 @@ input[type="submit"] {
 .brugertest4:hover,
 .storyboard_video:hover,
 .youtube_video:hover {
-  color: #be1f1f;
+  color: var(--emphasis-color);
 }
 .se_videositet {
   padding: 2vw 0;
@@ -1013,13 +1020,13 @@ input[type="submit"] {
   display: grid;
   font-family: "anton", serif;
   text-align: left;
-  color: #be1f1f;
+  color: var(--emphasis-color);
 }
 .youtube_video {
   padding: 2vw 0;
 }
 .se_videositet:hover {
-  color: #1562e7;
+  color: var(--primary-color);
 }
 .format,
 .udstyr,
@@ -1055,6 +1062,11 @@ iframe {
 }
 
 /******************************************************************tema05****************************/
+.presentation_portfolio {
+  padding-bottom: 40px;
+}
+
+/*********************************************************************tema06*********************/
 
 @media screen and (min-width: 700px) {
   .explore a {
@@ -1077,7 +1089,7 @@ iframe {
   .burger {
     display: none;
   }
-  .container {
+  #container {
     margin: 10% auto;
     width: 50%;
     height: auto;
@@ -1094,7 +1106,7 @@ iframe {
     position: absolute;
     text-align: left;
     font-family: "Jeongnimsaji-R";
-    color: rgb(83, 72, 72);
+    color: var(--text-color);
     line-height: 2vw;
   }
   .guide,
@@ -1113,7 +1125,7 @@ iframe {
   }
 
   footer {
-    border-top: 2px solid rgb(10, 100, 247);
+    border-top: 2px solid var(--primary-color);
     width: 100%;
     padding: 0 6vw;
   }
@@ -1124,7 +1136,7 @@ iframe {
   .mail,
   .social_media,
   .info {
-    color: rgb(10, 100, 247);
+    color: var(--primary-color);
     font-size: 1vw;
     font-weight: bold;
     font-family: "GmarketSansMedium";
@@ -1147,7 +1159,7 @@ iframe {
   }
   .timeline {
     margin: 10vw 8vw 8vw 8vw;
-    border-top: 2px solid #1562e7;
+    border-top: 2px solid var(--primary-color);
   }
   .timeline .bar {
     display: flex;
@@ -1170,7 +1182,7 @@ iframe {
     width: 0;
   }
   .active:hover {
-    color: #be1f1f;
+    color: var(--emphasis-color);
     transform: scale(2);
   }
   .projekt {
@@ -1260,14 +1272,14 @@ iframe {
     padding: 2vw 8vw 0 8vw;
   }
   .keywords img {
-    border-bottom: 2px solid #be1f1f;
+    border-bottom: 2px solid var(--emphasis-color);
     padding-bottom: 2vw;
   }
   .creative,
   .learner,
   .challenging {
     text-decoration: none;
-    color: #be1f1f;
+    color: var(--emphasis-color);
     font-size: 2vw;
     font-family: "Jeongnimsaji-R";
   }
@@ -1289,7 +1301,7 @@ iframe {
   .instagram,
   .facebook,
   .website {
-    color: rgb(83, 72, 72);
+    color: var(--text-color);
     font-family: "roboto";
   }
   .contact_me {
@@ -1320,7 +1332,7 @@ iframe {
     flex-direction: column;
     font-family: "roboto";
     font-size: 1.2vw;
-    color: #1562e7;
+    color: var(--primary-color);
     padding-bottom: 1.5vw;
   }
   #fornavn,
@@ -1342,7 +1354,7 @@ iframe {
     color: #e4e9f0;
     font-size: 1.2vw;
     font-family: "roboto";
-    background-color: #1562e7;
+    background-color: var(--primary-color);
     border-style: none;
   }
   /*************************************************************************************************forsiden*/
@@ -1388,7 +1400,7 @@ iframe {
     font-size: 1.5vw;
     font-family: "Arapey", serif;
     line-height: 1.8vw;
-    color: rgb(83, 72, 72);
+    color: var(--text-color);
   }
 
   .creative_key,
@@ -1422,7 +1434,7 @@ iframe {
     font-size: 2vw;
     line-height: 2.5vw;
     padding: 1.5vw 0 0 0;
-    color: #be1f1f;
+    color: var(--emphasis-color);
   }
 
   .learner_key {
@@ -1450,7 +1462,7 @@ iframe {
     font-size: 1.5vw;
     font-family: "Arapey", serif;
     line-height: 2.5vw;
-    color: rgb(83, 72, 72);
+    color: var(--text-color);
     text-align: left;
     line-height: 2.5vw;
   }
@@ -1462,7 +1474,7 @@ iframe {
   .cv_og_profil {
     font-size: 2vw;
     align-items: center;
-    color: #1562e7;
+    color: var(--primary-color);
     font-family: "Roboto", sans-serif;
     justify-content: right;
     transform: translate(32vw, -10vw);
@@ -1470,14 +1482,15 @@ iframe {
   .cv_og_profil::after {
     content: "";
     display: inline-block;
-    border-bottom: 2px solid #1562e7;
+    border-bottom: 2px solid var(--primary-color);
   }
   .name_overskrift {
     font-family: "Anton", sans-serif;
-    color: #1562e7;
+    color: var(--primary-color);
     transform: translateY(-9vw);
     font-size: 7vw;
     padding-left: 4vw;
+    padding-top: 0;
   }
   .om_mig_cv {
     font-size: 7vw;
@@ -1492,7 +1505,7 @@ iframe {
   .overskrift_hobby {
     font-size: 2vw;
     font-family: anton;
-    color: #1562e7;
+    color: var(--primary-color);
     padding-bottom: 1vw;
     padding-top: 2vw;
   }
@@ -1575,7 +1588,7 @@ iframe {
   }
   .mindmap_overskrift {
     font-family: "Anton", sans-serif;
-    color: #1562e7;
+    color: var(--primary-color);
     transform: translateY(-17vw);
     font-size: 7vw;
     padding-left: 4vw;
@@ -1583,7 +1596,7 @@ iframe {
   .mindmap_overskrift::after {
     content: "";
     display: inline-block;
-    border-bottom: 2px solid #1562e7;
+    border-bottom: 2px solid var(--primary-color);
     transform: translate(24vw, -9.5vw);
   }
   .mindmap {
@@ -1623,7 +1636,7 @@ iframe {
   .temaer ul,
   .beskrivelse_purpose {
     margin: 0 auto;
-    color: rgb(83, 72, 72);
+    color: var(--text-color);
     font-family: "Arapey", serif;
     text-align: left;
     font-size: 1.5vw;
@@ -1878,7 +1891,7 @@ iframe {
     display: flex;
     flex-direction: column;
     font-size: 1.5vw;
-    color: #be1f1f;
+    color: var(--emphasis-color);
     text-align: left;
     font-weight: normal;
     justify-self: flex-end;
@@ -1888,7 +1901,7 @@ iframe {
   .presentation a:hover,
   .javakode a:hover,
   .resultat_redesign a:hover {
-    color: #1562e7;
+    color: var(--primary-color);
   }
   .research_metoder {
     grid-column: 1/2;
@@ -1923,7 +1936,7 @@ iframe {
     grid-template-rows: auto auto;
     gap: 2vw;
     padding: 0vw 10vw;
-    color: rgb(83, 72, 72);
+    color: var(--text-color);
     font-family: "Arapey", serif;
     text-align: left;
     font-size: 1.5vw;
