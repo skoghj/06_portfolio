@@ -881,7 +881,7 @@ input[type="submit"] {
 .desktop_wire {
   padding-bottom: 4vw;
 }
-.wireframe,
+
 .sitemap,
 .kodesite2,
 .dokumentation {
@@ -891,6 +891,7 @@ input[type="submit"] {
 .wireframe {
   display: flex;
   flex-direction: column;
+  padding: 2vw 0 4vw 0;
 }
 
 .presentation_ppt,
@@ -928,7 +929,7 @@ input[type="submit"] {
 }
 .dokumentation a:hover,
 .presentation a:hover,
-.resultat_redesign a {
+.resultat_redesign a:hover {
   color: var(--primary-color);
 }
 
@@ -990,7 +991,7 @@ input[type="submit"] {
   font-size: 16px;
 }
 .spilhjemmesidet {
-  padding: 4vw 6vw;
+  padding: 0vw 6vw 6vw 6vw;
 }
 /************************************************************************''tema4*/
 .carhartt,
@@ -1081,7 +1082,7 @@ iframe {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 50px 0 50px;
+    padding: 10px 50px 0 50px;
   }
   .navbar a {
     font-size: 1vw;
@@ -1270,6 +1271,7 @@ iframe {
     display: flex;
     flex-direction: row;
     padding: 2vw 8vw 0 8vw;
+    justify-content: center;
   }
   .keywords img {
     border-bottom: 2px solid var(--emphasis-color);
